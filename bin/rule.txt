@@ -1,0 +1,681 @@
+Rule1:  ?b <hasChild> ?a  ?a <hasChild> ?b  2  7
+Rule2:  ?b <influences> ?a  ?a <influences> ?b  2  6
+Rule3:  ?b <isKnownFor> ?a  ?a <hasChild> ?b  2  1
+Rule4:  ?b <hasCapital> ?a  ?a <isLocatedIn> ?b  2  29
+Rule5:  ?b <hasChild> ?a  ?a <isKnownFor> ?b  2  1
+Rule6:  ?b <isMarriedTo> ?a  ?a <influences> ?b  2  1
+Rule7:  ?b <isMarriedTo> ?a  ?a <hasChild> ?b  2  20
+Rule8:  ?b <participatedIn> ?a  ?a <isLocatedIn> ?b  2  1
+Rule9:  ?b <dealsWith> ?a  ?a <dealsWith> ?b  2  39
+Rule10:  ?b <influences> ?a  ?a <isMarriedTo> ?b  2  1
+Rule11:  ?b <isMarriedTo> ?a  ?a <isMarriedTo> ?b  2  373
+Rule12:  ?b <isLocatedIn> ?a  ?a <participatedIn> ?b  2  1
+Rule13:  ?b <isLocatedIn> ?a  ?a <hasCapital> ?b  2  29
+Rule14:  ?b <hasChild> ?a  ?a <isMarriedTo> ?b  2  20
+Rule15:  ?a <isMarriedTo> ?b  ?a <hasChild> ?c  ?c <isMarriedTo> ?b  3  25
+Rule16:  ?a <created> ?b  ?a <influences> ?c  ?c <actedIn> ?b  3  2
+Rule17:  ?a <hasCurrency> ?b  ?a <dealsWith> ?c  ?c <hasCurrency> ?b  3  4
+Rule18:  ?a <hasChild> ?b  ?a <created> ?c  ?b <created> ?c  3  1
+Rule19:  ?a <hasAcademicAdvisor> ?b  ?a <hasAcademicAdvisor> ?c  ?c <hasAcademicAdvisor> ?b  3  3
+Rule20:  ?a <influences> ?b  ?a <created> ?c  ?b <created> ?c  3  17
+Rule21:  ?a <influences> ?b  ?a <isMarriedTo> ?c  ?c <influences> ?b  3  2
+Rule22:  ?a <created> ?b  ?a <created> ?c  ?c <hasChild> ?b  3  2
+Rule23:  ?a <isMarriedTo> ?b  ?a <wasBornIn> ?c  ?b <diedIn> ?c  3  2
+Rule24:  ?a <produced> ?b  ?a <isMarriedTo> ?c  ?c <produced> ?b  3  15
+Rule25:  ?a <worksAt> ?b  ?a <livesIn> ?c  ?b <isLocatedIn> ?c  3  2
+Rule26:  ?a <participatedIn> ?b  ?a <dealsWith> ?c  ?c <participatedIn> ?b  3  988
+Rule27:  ?a <hasChild> ?b  ?a <isCitizenOf> ?c  ?b <isCitizenOf> ?c  3  1
+Rule28:  ?a <hasAcademicAdvisor> ?b  ?a <diedIn> ?c  ?b <diedIn> ?c  3  1
+Rule29:  ?a <dealsWith> ?b  ?a <dealsWith> ?c  ?c <dealsWith> ?b  3  847
+Rule30:  ?a <isLeaderOf> ?b  ?a <livesIn> ?c  ?c <isLocatedIn> ?b  3  1
+Rule31:  ?a <isLocatedIn> ?b  ?a <isCitizenOf> ?c  ?b <isLocatedIn> ?c  3  7
+Rule32:  ?a <directed> ?b  ?a <hasChild> ?c  ?c <produced> ?b  3  1
+Rule33:  ?a <hasChild> ?b  ?a <livesIn> ?c  ?b <livesIn> ?c  3  7
+Rule34:  ?a <hasWonPrize> ?b  ?a <hasAcademicAdvisor> ?c  ?c <hasWonPrize> ?b  3  5
+Rule35:  ?a <isCitizenOf> ?b  ?a <hasAcademicAdvisor> ?c  ?c <livesIn> ?b  3  1
+Rule36:  ?a <produced> ?b  ?a <isMarriedTo> ?c  ?c <created> ?b  3  1
+Rule37:  ?a <isLocatedIn> ?b  ?a <participatedIn> ?c  ?b <participatedIn> ?c  3  1
+Rule38:  ?a <actedIn> ?b  ?a <isMarriedTo> ?c  ?c <produced> ?b  3  10
+Rule39:  ?a <actedIn> ?b  ?a <isMarriedTo> ?c  ?c <directed> ?b  3  29
+Rule40:  ?a <isLocatedIn> ?b  ?a <hasCapital> ?c  ?c <isLocatedIn> ?b  3  1
+Rule41:  ?a <hasChild> ?b  ?a <wasBornIn> ?c  ?b <wasBornIn> ?c  3  18
+Rule42:  ?a <isLocatedIn> ?b  ?a <isCitizenOf> ?c  ?c <hasCapital> ?b  3  5
+Rule43:  ?a <influences> ?b  ?a <wasBornIn> ?c  ?b <diedIn> ?c  3  5
+Rule44:  ?a <directed> ?b  ?a <influences> ?c  ?c <created> ?b  3  1
+Rule45:  ?a <dealsWith> ?b  ?a <exports> ?c  ?b <exports> ?c  3  85
+Rule46:  ?a <hasAcademicAdvisor> ?b  ?a <isCitizenOf> ?c  ?b <isCitizenOf> ?c  3  1
+Rule47:  ?a <diedIn> ?b  ?a <isMarriedTo> ?c  ?c <diedIn> ?b  3  14
+Rule48:  ?a <hasAcademicAdvisor> ?b  ?a <graduatedFrom> ?c  ?b <graduatedFrom> ?c  3  5
+Rule49:  ?a <hasAcademicAdvisor> ?b  ?a <isKnownFor> ?c  ?c <influences> ?b  3  1
+Rule50:  ?a <hasAcademicAdvisor> ?b  ?a <worksAt> ?c  ?b <worksAt> ?c  3  5
+Rule51:  ?a <directed> ?b  ?a <isMarriedTo> ?c  ?c <created> ?b  3  3
+Rule52:  ?a <participatedIn> ?b  ?a <hasChild> ?c  ?c <participatedIn> ?b  3  17
+Rule53:  ?a <isPoliticianOf> ?b  ?a <isLeaderOf> ?c  ?c <livesIn> ?b  3  1
+Rule54:  ?a <produced> ?b  ?a <influences> ?c  ?c <actedIn> ?b  3  1
+Rule55:  ?a <influences> ?b  ?a <isCitizenOf> ?c  ?b <isCitizenOf> ?c  3  9
+Rule56:  ?a <influences> ?b  ?a <hasWonPrize> ?c  ?b <hasWonPrize> ?c  3  9
+Rule57:  ?a <wasBornIn> ?b  ?a <isCitizenOf> ?c  ?b <isLocatedIn> ?c  3  27
+Rule58:  ?a <hasMusicalRole> ?b  ?a <isMarriedTo> ?c  ?c <hasMusicalRole> ?b  3  1
+Rule59:  ?a <isCitizenOf> ?b  ?a <isMarriedTo> ?c  ?c <isCitizenOf> ?b  3  2
+Rule60:  ?a <influences> ?b  ?a <influences> ?c  ?c <influences> ?b  3  574
+Rule61:  ?a <diedIn> ?b  ?a <hasChild> ?c  ?c <isLocatedIn> ?b  3  1
+Rule62:  ?a <hasChild> ?b  ?a <actedIn> ?c  ?b <created> ?c  3  1
+Rule63:  ?a <livesIn> ?b  ?a <livesIn> ?c  ?c <isLocatedIn> ?b  3  1
+Rule64:  ?a <isLeaderOf> ?b  ?a <diedIn> ?c  ?b <livesIn> ?c  3  1
+Rule65:  ?a <dealsWith> ?b  ?a <exports> ?c  ?b <imports> ?c  3  76
+Rule66:  ?a <graduatedFrom> ?b  ?a <influences> ?c  ?c <graduatedFrom> ?b  3  3
+Rule67:  ?a <hasWonPrize> ?b  ?a <isMarriedTo> ?c  ?c <hasWonPrize> ?b  3  6
+Rule68:  ?a <hasChild> ?b  ?a <isKnownFor> ?c  ?c <hasChild> ?b  3  7
+Rule69:  ?a <diedIn> ?b  ?a <holdsPoliticalPosition> ?c  ?c <livesIn> ?b  3  1
+Rule70:  ?a <hasAcademicAdvisor> ?b  ?a <hasAcademicAdvisor> ?c  ?c <influences> ?b  3  1
+Rule71:  ?a <diedIn> ?b  ?a <hasChild> ?c  ?c <diedIn> ?b  3  4
+Rule72:  ?a <isKnownFor> ?b  ?a <influences> ?c  ?c <isKnownFor> ?b  3  2
+Rule73:  ?a <influences> ?b  ?a <isInterestedIn> ?c  ?b <isInterestedIn> ?c  3  2
+Rule74:  ?a <worksAt> ?b  ?a <influences> ?c  ?c <worksAt> ?b  3  1
+Rule75:  ?a <isLeaderOf> ?b  ?a <isMarriedTo> ?c  ?c <isLeaderOf> ?b  3  2
+Rule76:  ?a <isMarriedTo> ?b  ?a <isLocatedIn> ?c  ?b <wasBornIn> ?c  3  1
+Rule77:  ?a <isLocatedIn> ?b  ?a <dealsWith> ?c  ?c <isLocatedIn> ?b  3  5
+Rule78:  ?a <actedIn> ?b  ?a <hasChild> ?c  ?c <produced> ?b  3  3
+Rule79:  ?a <created> ?b  ?a <created> ?c  ?b <isMarriedTo> ?c  3  1
+Rule80:  ?a <dealsWith> ?b  ?a <imports> ?c  ?b <exports> ?c  3  85
+Rule81:  ?a <dealsWith> ?b  ?a <hasOfficialLanguage> ?c  ?b <hasOfficialLanguage> ?c  3  57
+Rule82:  ?a <created> ?b  ?a <isMarriedTo> ?c  ?c <created> ?b  3  37
+Rule83:  ?a <hasChild> ?b  ?a <graduatedFrom> ?c  ?b <graduatedFrom> ?c  3  1
+Rule84:  ?a <worksAt> ?b  ?a <hasChild> ?c  ?c <graduatedFrom> ?b  3  1
+Rule85:  ?a <diedIn> ?b  ?a <isCitizenOf> ?c  ?b <isLocatedIn> ?c  3  22
+Rule86:  ?a <hasCapital> ?b  ?a <participatedIn> ?c  ?b <participatedIn> ?c  3  5
+Rule87:  ?a <produced> ?b  ?a <hasChild> ?c  ?c <created> ?b  3  1
+Rule88:  ?a <isKnownFor> ?b  ?a <hasChild> ?c  ?c <isKnownFor> ?b  3  4
+Rule89:  ?a <diedIn> ?b  ?a <isMarriedTo> ?c  ?c <wasBornIn> ?b  3  4
+Rule90:  ?a <hasAcademicAdvisor> ?b  ?a <graduatedFrom> ?c  ?b <worksAt> ?c  3  1
+Rule91:  ?a <produced> ?b  ?a <isMarriedTo> ?c  ?c <directed> ?b  3  1
+Rule92:  ?a <actedIn> ?b  ?a <isMarriedTo> ?c  ?c <created> ?b  3  11
+Rule93:  ?a <actedIn> ?b  ?a <isMarriedTo> ?c  ?c <actedIn> ?b  3  54
+Rule94:  ?a <isCitizenOf> ?b  ?a <livesIn> ?c  ?c <isLocatedIn> ?b  3  6
+Rule95:  ?a <hasChild> ?b  ?a <hasWonPrize> ?c  ?b <hasWonPrize> ?c  3  2
+Rule96:  ?a <hasChild> ?b  ?a <wasBornIn> ?c  ?b <diedIn> ?c  3  2
+Rule97:  ?a <diedIn> ?b  ?a <isCitizenOf> ?c  ?c <hasCapital> ?b  3  24
+Rule98:  ?a <wasBornIn> ?b  ?a <isMarriedTo> ?c  ?c <wasBornIn> ?b  3  11
+Rule99:  ?a <isLeaderOf> ?b  ?a <isLeaderOf> ?c  ?b <dealsWith> ?c  3  1
+Rule100:  ?a <diedIn> ?b  ?a <hasChild> ?c  ?c <wasBornIn> ?b  3  11
+Rule101:  ?a <hasChild> ?b  ?a <directed> ?c  ?b <actedIn> ?c  3  1
+Rule102:  ?a <influences> ?b  ?a <diedIn> ?c  ?b <diedIn> ?c  3  3
+Rule103:  ?a <isLocatedIn> ?b  ?a <wasBornIn> ?c  ?b <hasCapital> ?c  3  1
+Rule104:  ?a <wasBornIn> ?b  ?a <isLeaderOf> ?c  ?b <isLocatedIn> ?c  3  1
+Rule105:  ?a <isCitizenOf> ?b  ?a <livesIn> ?c  ?b <hasCapital> ?c  3  5
+Rule106:  ?a <diedIn> ?b  ?a <livesIn> ?c  ?c <hasCapital> ?b  3  1
+Rule107:  ?a <isLocatedIn> ?b  ?a <hasOfficialLanguage> ?c  ?b <hasOfficialLanguage> ?c  3  2
+Rule108:  ?a <dealsWith> ?b  ?a <imports> ?c  ?b <imports> ?c  3  133
+Rule109:  ?a <isPoliticianOf> ?b  ?a <wasBornIn> ?c  ?b <hasCapital> ?c  3  1
+Rule110:  ?a <isMarriedTo> ?b  ?a <graduatedFrom> ?c  ?b <graduatedFrom> ?c  3  3
+Rule111:  ?a <isLeaderOf> ?b  ?a <created> ?c  ?b <created> ?c  3  1
+Rule112:  ?a <wasBornIn> ?b  ?a <isMarriedTo> ?c  ?c <isLocatedIn> ?b  3  1
+Rule113:  ?a <livesIn> ?b  ?a <isMarriedTo> ?c  ?c <livesIn> ?b  3  8
+Rule114:  ?a <hasChild> ?b  ?a <actedIn> ?c  ?b <actedIn> ?c  3  5
+Rule115:  ?a <livesIn> ?b  ?a <livesIn> ?c  ?b <hasCapital> ?c  3  20
+Rule116:  ?a <livesIn> ?b  ?a <isCitizenOf> ?c  ?b <dealsWith> ?c  3  5
+Rule117:  ?a <wasBornIn> ?b  ?a <isCitizenOf> ?c  ?c <hasCapital> ?b  3  34
+Rule118:  ?a <wasBornIn> ?b  ?a <holdsPoliticalPosition> ?c  ?c <livesIn> ?b  3  1
+Rule119:  ?a <created> ?b  ?a <isMarriedTo> ?c  ?c <actedIn> ?b  3  8
+Rule120:  ?a <actedIn> ?b  ?a <influences> ?c  ?c <actedIn> ?b  3  8
+Rule121:  ?a <wasBornIn> ?b  ?a <livesIn> ?c  ?b <isLocatedIn> ?c  3  26
+Rule122:  ?a <diedIn> ?b  ?a <livesIn> ?c  ?b <isLocatedIn> ?c  3  3
+Rule123:  ?a <created> ?b  ?a <isMarriedTo> ?c  ?c <directed> ?b  3  3
+Rule124:  ?a <hasAcademicAdvisor> ?b  ?a <livesIn> ?c  ?b <livesIn> ?c  3  3
+Rule125:  ?a <influences> ?b  ?a <wasBornIn> ?c  ?b <wasBornIn> ?c  3  3
+Rule126:  ?a <directed> ?b  ?a <isMarriedTo> ?c  ?c <actedIn> ?b  3  33
+Rule127:  ?a <isMarriedTo> ?b  ?a <produced> ?c  ?b <actedIn> ?c  3  13
+Rule128:  ?a <influences> ?b  ?a <created> ?c  ?b <directed> ?c  3  1
+Rule129:  ?a <wasBornIn> ?b  ?a <livesIn> ?c  ?c <hasCapital> ?b  3  3
+Rule130:  ?a <hasChild> ?b  ?a <isMarriedTo> ?c  ?c <hasChild> ?b  3  693
+Rule131:  ?a <actedIn> ?b  ?a <influences> ?c  ?c <directed> ?b  3  2
+Rule132:  ?a <hasCapital> ?b  ?a <hasOfficialLanguage> ?c  ?b <hasOfficialLanguage> ?c  3  1
+Rule133:  ?a <influences> ?b  ?a <produced> ?c  ?b <created> ?c  3  1
+Rule134:  ?a <diedIn> ?b  ?a <isLocatedIn> ?c  ?b <isLocatedIn> ?c  3  1
+Rule135:  ?a <livesIn> ?b  ?a <livesIn> ?c  ?d <wasBornIn> ?c  ?d <isCitizenOf> ?b  4  9
+Rule136:  ?a <created> ?b  ?a <influences> ?c  ?d <influences> ?c  ?d <directed> ?b  4  3
+Rule137:  ?a <hasChild> ?b  ?c <hasChild> ?a  ?c <isMarriedTo> ?d  ?d <isMarriedTo> ?b  4  138
+Rule138:  ?a <produced> ?b  ?a <created> ?c  ?d <created> ?c  ?d <created> ?b  4  9
+Rule139:  ?a <livesIn> ?b  ?a <livesIn> ?c  ?c <dealsWith> ?d  ?b <dealsWith> ?d  4  249
+Rule140:  ?a <created> ?b  ?a <produced> ?c  ?d <produced> ?c  ?d <directed> ?b  4  8
+Rule141:  ?a <isLeaderOf> ?b  ?a <isLeaderOf> ?c  ?c <dealsWith> ?d  ?b <dealsWith> ?d  4  14
+Rule142:  ?a <livesIn> ?b  ?a <livesIn> ?c  ?c <hasCapital> ?d  ?d <isLocatedIn> ?b  4  1
+Rule143:  ?a <created> ?b  ?a <hasChild> ?c  ?d <hasChild> ?c  ?d <created> ?b  4  25
+Rule144:  ?a <wasBornIn> ?b  ?a <graduatedFrom> ?c  ?d <graduatedFrom> ?c  ?d <diedIn> ?b  4  2
+Rule145:  ?a <created> ?b  ?a <hasChild> ?c  ?d <hasChild> ?c  ?d <actedIn> ?b  4  1
+Rule146:  ?a <livesIn> ?b  ?a <diedIn> ?c  ?d <livesIn> ?c  ?d <livesIn> ?b  4  6
+Rule147:  ?a <graduatedFrom> ?b  ?a <hasWonPrize> ?c  ?d <hasWonPrize> ?c  ?d <graduatedFrom> ?b  4  1
+Rule148:  ?a <isMarriedTo> ?b  ?a <hasChild> ?c  ?d <isMarriedTo> ?c  ?d <hasChild> ?b  4  169
+Rule149:  ?a <imports> ?b  ?c <dealsWith> ?a  ?c <dealsWith> ?d  ?d <exports> ?b  4  828
+Rule150:  ?a <diedIn> ?b  ?a <isPoliticianOf> ?c  ?d <livesIn> ?c  ?d <livesIn> ?b  4  5
+Rule151:  ?a <isCitizenOf> ?b  ?a <diedIn> ?c  ?d <isLocatedIn> ?c  ?d <isCitizenOf> ?b  4  5
+Rule152:  ?a <livesIn> ?b  ?a <wasBornIn> ?c  ?d <wasBornIn> ?c  ?d <isCitizenOf> ?b  4  1
+Rule153:  ?a <isCitizenOf> ?b  ?a <wasBornIn> ?c  ?c <participatedIn> ?d  ?b <participatedIn> ?d  4  3
+Rule154:  ?a <dealsWith> ?b  ?c <isCitizenOf> ?a  ?c <livesIn> ?d  ?b <dealsWith> ?d  4  94
+Rule155:  ?a <wasBornIn> ?b  ?a <hasChild> ?c  ?c <hasChild> ?d  ?d <wasBornIn> ?b  4  227
+Rule156:  ?a <isLocatedIn> ?b  ?a <participatedIn> ?c  ?d <participatedIn> ?c  ?b <hasCapital> ?d  4  1
+Rule157:  ?a <hasCapital> ?b  ?a <exports> ?c  ?d <exports> ?c  ?d <hasCapital> ?b  4  3
+Rule158:  ?a <diedIn> ?b  ?c <isMarriedTo> ?a  ?c <hasChild> ?d  ?d <diedIn> ?b  4  54
+Rule159:  ?a <created> ?b  ?a <created> ?c  ?d <produced> ?c  ?d <directed> ?b  4  8
+Rule160:  ?a <produced> ?b  ?a <created> ?c  ?d <created> ?c  ?d <actedIn> ?b  4  12
+Rule161:  ?a <isMarriedTo> ?b  ?a <isMarriedTo> ?c  ?d <hasChild> ?c  ?d <isMarriedTo> ?b  4  105
+Rule162:  ?a <created> ?b  ?a <directed> ?c  ?d <actedIn> ?c  ?d <actedIn> ?b  4  25
+Rule163:  ?a <actedIn> ?b  ?a <diedIn> ?c  ?d <diedIn> ?c  ?d <directed> ?b  4  2
+Rule164:  ?a <influences> ?b  ?a <created> ?c  ?d <created> ?c  ?d <influences> ?b  4  6
+Rule165:  ?a <dealsWith> ?b  ?c <dealsWith> ?a  ?d <isCitizenOf> ?c  ?d <livesIn> ?b  4  5
+Rule166:  ?a <isKnownFor> ?b  ?c <hasChild> ?a  ?d <isMarriedTo> ?c  ?d <isKnownFor> ?b  4  20
+Rule167:  ?a <participatedIn> ?b  ?a <isLocatedIn> ?c  ?d <dealsWith> ?c  ?d <participatedIn> ?b  4  22
+Rule168:  ?a <livesIn> ?b  ?a <diedIn> ?c  ?d <diedIn> ?c  ?d <livesIn> ?b  4  2
+Rule169:  ?a <hasCapital> ?b  ?c <isLocatedIn> ?a  ?c <participatedIn> ?d  ?b <participatedIn> ?d  4  12
+Rule170:  ?a <directed> ?b  ?a <diedIn> ?c  ?d <diedIn> ?c  ?d <actedIn> ?b  4  2
+Rule171:  ?a <hasCapital> ?b  ?a <participatedIn> ?c  ?d <participatedIn> ?c  ?d <hasCapital> ?b  4  1
+Rule172:  ?a <wasBornIn> ?b  ?a <isCitizenOf> ?c  ?d <isCitizenOf> ?c  ?d <livesIn> ?b  4  6
+Rule173:  ?a <exports> ?b  ?a <exports> ?c  ?d <imports> ?c  ?d <exports> ?b  4  743
+Rule174:  ?a <actedIn> ?b  ?a <actedIn> ?c  ?d <produced> ?c  ?d <created> ?b  4  4
+Rule175:  ?a <influences> ?b  ?c <hasAcademicAdvisor> ?a  ?c <influences> ?d  ?d <influences> ?b  4  8
+Rule176:  ?a <worksAt> ?b  ?a <graduatedFrom> ?c  ?d <graduatedFrom> ?c  ?d <worksAt> ?b  4  2
+Rule177:  ?a <isCitizenOf> ?b  ?a <graduatedFrom> ?c  ?d <worksAt> ?c  ?d <isCitizenOf> ?b  4  3
+Rule178:  ?a <influences> ?b  ?a <isKnownFor> ?c  ?d <isKnownFor> ?c  ?d <influences> ?b  4  2
+Rule179:  ?a <participatedIn> ?b  ?a <hasCapital> ?c  ?d <hasCapital> ?c  ?d <participatedIn> ?b  4  2
+Rule180:  ?a <hasCapital> ?b  ?c <isCitizenOf> ?a  ?c <hasAcademicAdvisor> ?d  ?d <diedIn> ?b  4  3
+Rule181:  ?a <diedIn> ?b  ?a <isCitizenOf> ?c  ?d <isCitizenOf> ?c  ?d <wasBornIn> ?b  4  44
+Rule182:  ?a <dealsWith> ?b  ?a <participatedIn> ?c  ?c <isLocatedIn> ?d  ?d <dealsWith> ?b  4  12
+Rule183:  ?a <diedIn> ?b  ?a <livesIn> ?c  ?d <livesIn> ?c  ?d <wasBornIn> ?b  4  4
+Rule184:  ?a <graduatedFrom> ?b  ?c <influences> ?a  ?d <hasAcademicAdvisor> ?c  ?d <graduatedFrom> ?b  4  3
+Rule185:  ?a <dealsWith> ?b  ?a <dealsWith> ?c  ?c <participatedIn> ?d  ?b <participatedIn> ?d  4  60
+Rule186:  ?a <wasBornIn> ?b  ?a <hasWonPrize> ?c  ?d <hasWonPrize> ?c  ?d <wasBornIn> ?b  4  2
+Rule187:  ?a <livesIn> ?b  ?a <worksAt> ?c  ?d <graduatedFrom> ?c  ?d <isCitizenOf> ?b  4  1
+Rule188:  ?a <actedIn> ?b  ?a <created> ?c  ?d <produced> ?c  ?d <created> ?b  4  14
+Rule189:  ?a <influences> ?b  ?a <directed> ?c  ?d <created> ?c  ?d <influences> ?b  4  1
+Rule190:  ?a <influences> ?b  ?a <isCitizenOf> ?c  ?c <hasCapital> ?d  ?b <diedIn> ?d  4  6
+Rule191:  ?a <wasBornIn> ?b  ?a <livesIn> ?c  ?d <isCitizenOf> ?c  ?d <isLocatedIn> ?b  4  1
+Rule192:  ?a <isLocatedIn> ?b  ?c <hasChild> ?a  ?d <isMarriedTo> ?c  ?d <diedIn> ?b  4  1
+Rule193:  ?a <actedIn> ?b  ?a <hasMusicalRole> ?c  ?d <hasMusicalRole> ?c  ?d <actedIn> ?b  4  2
+Rule194:  ?a <isCitizenOf> ?b  ?a <livesIn> ?c  ?d <livesIn> ?c  ?d <isCitizenOf> ?b  4  1
+Rule195:  ?a <hasChild> ?b  ?a <isMarriedTo> ?c  ?c <diedIn> ?d  ?b <wasBornIn> ?d  4  41
+Rule196:  ?a <exports> ?b  ?a <exports> ?c  ?d <exports> ?c  ?d <exports> ?b  4  61
+Rule197:  ?a <actedIn> ?b  ?a <actedIn> ?c  ?d <produced> ?c  ?d <produced> ?b  4  6
+Rule198:  ?a <hasChild> ?b  ?a <diedIn> ?c  ?d <diedIn> ?c  ?b <isMarriedTo> ?d  4  3
+Rule199:  ?a <isLocatedIn> ?b  ?a <isCitizenOf> ?c  ?d <isCitizenOf> ?c  ?d <livesIn> ?b  4  4
+Rule200:  ?a <graduatedFrom> ?b  ?a <holdsPoliticalPosition> ?c  ?d <holdsPoliticalPosition> ?c  ?d <graduatedFrom> ?b  4  1
+Rule201:  ?a <isLocatedIn> ?b  ?a <isCitizenOf> ?c  ?d <dealsWith> ?c  ?b <isLocatedIn> ?d  4  1
+Rule202:  ?a <produced> ?b  ?a <produced> ?c  ?d <directed> ?c  ?d <produced> ?b  4  5
+Rule203:  ?a <diedIn> ?b  ?a <isCitizenOf> ?c  ?d <dealsWith> ?c  ?b <isLocatedIn> ?d  4  7
+Rule204:  ?a <produced> ?b  ?a <directed> ?c  ?d <created> ?c  ?d <created> ?b  4  14
+Rule205:  ?a <isLocatedIn> ?b  ?c <hasCapital> ?a  ?d <livesIn> ?c  ?d <livesIn> ?b  4  1
+Rule206:  ?a <hasWonPrize> ?b  ?c <influences> ?a  ?c <created> ?d  ?d <hasWonPrize> ?b  4  6
+Rule207:  ?a <graduatedFrom> ?b  ?a <wasBornIn> ?c  ?d <diedIn> ?c  ?d <graduatedFrom> ?b  4  3
+Rule208:  ?a <dealsWith> ?b  ?a <hasCurrency> ?c  ?d <hasCurrency> ?c  ?d <dealsWith> ?b  4  10
+Rule209:  ?a <produced> ?b  ?a <produced> ?c  ?d <created> ?c  ?d <produced> ?b  4  11
+Rule210:  ?a <hasOfficialLanguage> ?b  ?a <hasOfficialLanguage> ?c  ?d <hasOfficialLanguage> ?c  ?d <hasOfficialLanguage> ?b  4  32
+Rule211:  ?a <hasAcademicAdvisor> ?b  ?a <graduatedFrom> ?c  ?d <graduatedFrom> ?c  ?b <hasAcademicAdvisor> ?d  4  7
+Rule212:  ?a <actedIn> ?b  ?a <actedIn> ?c  ?d <directed> ?c  ?d <created> ?b  4  5
+Rule213:  ?a <hasChild> ?b  ?a <wasBornIn> ?c  ?d <wasBornIn> ?c  ?d <isMarriedTo> ?b  4  6
+Rule214:  ?a <wasBornIn> ?b  ?c <influences> ?a  ?c <influences> ?d  ?d <wasBornIn> ?b  4  5
+Rule215:  ?a <directed> ?b  ?a <actedIn> ?c  ?d <actedIn> ?c  ?d <actedIn> ?b  4  36
+Rule216:  ?a <livesIn> ?b  ?a <livesIn> ?c  ?d <isPoliticianOf> ?c  ?d <diedIn> ?b  4  2
+Rule217:  ?a <diedIn> ?b  ?a <holdsPoliticalPosition> ?c  ?c <livesIn> ?d  ?b <isLocatedIn> ?d  4  3
+Rule218:  ?a <livesIn> ?b  ?a <isLeaderOf> ?c  ?d <holdsPoliticalPosition> ?c  ?d <isCitizenOf> ?b  4  1
+Rule219:  ?a <hasChild> ?b  ?a <graduatedFrom> ?c  ?d <graduatedFrom> ?c  ?d <hasChild> ?b  4  3
+Rule220:  ?a <isLocatedIn> ?b  ?c <wasBornIn> ?a  ?c <diedIn> ?d  ?d <isLocatedIn> ?b  4  29
+Rule221:  ?a <influences> ?b  ?a <influences> ?c  ?c <actedIn> ?d  ?b <created> ?d  4  13
+Rule222:  ?a <dealsWith> ?b  ?c <dealsWith> ?a  ?c <hasOfficialLanguage> ?d  ?b <hasOfficialLanguage> ?d  4  1988
+Rule223:  ?a <dealsWith> ?b  ?c <dealsWith> ?a  ?c <exports> ?d  ?b <exports> ?d  4  815
+Rule224:  ?a <isLocatedIn> ?b  ?c <livesIn> ?a  ?c <livesIn> ?d  ?b <isLocatedIn> ?d  4  7
+Rule225:  ?a <isCitizenOf> ?b  ?a <diedIn> ?c  ?d <wasBornIn> ?c  ?d <isLocatedIn> ?b  4  1
+Rule226:  ?a <wasBornIn> ?b  ?a <graduatedFrom> ?c  ?d <graduatedFrom> ?c  ?d <livesIn> ?b  4  2
+Rule227:  ?a <hasAcademicAdvisor> ?b  ?a <influences> ?c  ?d <influences> ?c  ?d <hasAcademicAdvisor> ?b  4  3
+Rule228:  ?a <dealsWith> ?b  ?a <dealsWith> ?c  ?c <imports> ?d  ?b <imports> ?d  4  1799
+Rule229:  ?a <livesIn> ?b  ?a <holdsPoliticalPosition> ?c  ?d <holdsPoliticalPosition> ?c  ?d <livesIn> ?b  4  5
+Rule230:  ?a <hasWonPrize> ?b  ?c <hasAcademicAdvisor> ?a  ?c <hasAcademicAdvisor> ?d  ?d <hasWonPrize> ?b  4  3
+Rule231:  ?a <dealsWith> ?b  ?a <exports> ?c  ?d <exports> ?c  ?d <dealsWith> ?b  4  985
+Rule232:  ?a <dealsWith> ?b  ?c <dealsWith> ?a  ?c <hasCurrency> ?d  ?b <hasCurrency> ?d  4  32
+Rule233:  ?a <imports> ?b  ?c <isLeaderOf> ?a  ?c <isLeaderOf> ?d  ?d <exports> ?b  4  1
+Rule234:  ?a <hasChild> ?b  ?a <isMarriedTo> ?c  ?c <actedIn> ?d  ?b <produced> ?d  4  3
+Rule235:  ?a <influences> ?b  ?a <directed> ?c  ?d <actedIn> ?c  ?d <influences> ?b  4  7
+Rule236:  ?a <isLocatedIn> ?b  ?c <isKnownFor> ?a  ?c <isKnownFor> ?d  ?d <isLocatedIn> ?b  4  5
+Rule237:  ?a <actedIn> ?b  ?a <actedIn> ?c  ?d <actedIn> ?c  ?d <directed> ?b  4  5
+Rule238:  ?a <isLocatedIn> ?b  ?c <diedIn> ?a  ?c <isLocatedIn> ?d  ?d <isLocatedIn> ?b  4  7
+Rule239:  ?a <isLocatedIn> ?b  ?a <imports> ?c  ?d <exports> ?c  ?d <isLocatedIn> ?b  4  3
+Rule240:  ?a <diedIn> ?b  ?a <holdsPoliticalPosition> ?c  ?c <livesIn> ?d  ?d <hasCapital> ?b  4  5
+Rule241:  ?a <livesIn> ?b  ?a <livesIn> ?c  ?d <livesIn> ?c  ?d <livesIn> ?b  4  3
+Rule242:  ?a <influences> ?b  ?c <influences> ?a  ?c <hasWonPrize> ?d  ?b <hasWonPrize> ?d  4  43
+Rule243:  ?a <produced> ?b  ?a <produced> ?c  ?d <actedIn> ?c  ?d <created> ?b  4  9
+Rule244:  ?a <isMarriedTo> ?b  ?a <diedIn> ?c  ?d <hasCapital> ?c  ?b <isCitizenOf> ?d  4  1
+Rule245:  ?a <isMarriedTo> ?b  ?a <isKnownFor> ?c  ?d <isKnownFor> ?c  ?b <hasChild> ?d  4  3
+Rule246:  ?a <livesIn> ?b  ?a <livesIn> ?c  ?c <exports> ?d  ?b <imports> ?d  4  1
+Rule247:  ?a <created> ?b  ?a <created> ?c  ?c <isLocatedIn> ?d  ?b <isLocatedIn> ?d  4  4
+Rule248:  ?a <actedIn> ?b  ?a <actedIn> ?c  ?d <directed> ?c  ?d <directed> ?b  4  6
+Rule249:  ?a <hasAcademicAdvisor> ?b  ?a <isCitizenOf> ?c  ?d <isLocatedIn> ?c  ?b <diedIn> ?d  4  1
+Rule250:  ?a <livesIn> ?b  ?c <hasChild> ?a  ?d <isMarriedTo> ?c  ?d <livesIn> ?b  4  35
+Rule251:  ?a <imports> ?b  ?a <imports> ?c  ?d <imports> ?c  ?d <imports> ?b  4  293
+Rule252:  ?a <actedIn> ?b  ?a <hasWonPrize> ?c  ?d <hasWonPrize> ?c  ?d <produced> ?b  4  3
+Rule253:  ?a <hasCapital> ?b  ?c <dealsWith> ?a  ?d <isCitizenOf> ?c  ?d <diedIn> ?b  4  4
+Rule254:  ?a <isMarriedTo> ?b  ?a <wasBornIn> ?c  ?c <isLocatedIn> ?d  ?b <isCitizenOf> ?d  4  1
+Rule255:  ?a <produced> ?b  ?a <produced> ?c  ?d <actedIn> ?c  ?d <actedIn> ?b  4  10
+Rule256:  ?a <isLocatedIn> ?b  ?c <diedIn> ?a  ?c <hasChild> ?d  ?d <isLeaderOf> ?b  4  1
+Rule257:  ?a <hasCurrency> ?b  ?a <exports> ?c  ?d <exports> ?c  ?d <hasCurrency> ?b  4  1
+Rule258:  ?a <hasCapital> ?b  ?a <hasCurrency> ?c  ?d <hasCurrency> ?c  ?b <isLocatedIn> ?d  4  2
+Rule259:  ?a <imports> ?b  ?a <hasOfficialLanguage> ?c  ?d <hasOfficialLanguage> ?c  ?d <exports> ?b  4  39
+Rule260:  ?a <influences> ?b  ?a <influences> ?c  ?d <isMarriedTo> ?c  ?b <influences> ?d  4  1
+Rule261:  ?a <influences> ?b  ?a <produced> ?c  ?d <actedIn> ?c  ?d <influences> ?b  4  3
+Rule262:  ?a <produced> ?b  ?a <created> ?c  ?d <created> ?c  ?d <produced> ?b  4  10
+Rule263:  ?a <wasBornIn> ?b  ?c <hasChild> ?a  ?d <isMarriedTo> ?c  ?d <diedIn> ?b  4  32
+Rule264:  ?a <created> ?b  ?a <directed> ?c  ?d <produced> ?c  ?d <actedIn> ?b  4  5
+Rule265:  ?a <produced> ?b  ?a <actedIn> ?c  ?d <produced> ?c  ?d <directed> ?b  4  6
+Rule266:  ?a <diedIn> ?b  ?a <isPoliticianOf> ?c  ?d <isPoliticianOf> ?c  ?d <livesIn> ?b  4  3
+Rule267:  ?a <diedIn> ?b  ?c <hasAcademicAdvisor> ?a  ?c <isCitizenOf> ?d  ?b <isLocatedIn> ?d  4  1
+Rule268:  ?a <actedIn> ?b  ?a <influences> ?c  ?c <influences> ?d  ?d <actedIn> ?b  4  41
+Rule269:  ?a <hasChild> ?b  ?a <hasChild> ?c  ?c <hasChild> ?d  ?d <isMarriedTo> ?b  4  42
+Rule270:  ?a <hasOfficialLanguage> ?b  ?a <hasCapital> ?c  ?d <hasCapital> ?c  ?d <hasOfficialLanguage> ?b  4  2
+Rule271:  ?a <isLocatedIn> ?b  ?a <dealsWith> ?c  ?d <dealsWith> ?c  ?d <isLocatedIn> ?b  4  78
+Rule272:  ?a <isCitizenOf> ?b  ?a <diedIn> ?c  ?d <livesIn> ?c  ?d <livesIn> ?b  4  7
+Rule273:  ?a <isCitizenOf> ?b  ?a <worksAt> ?c  ?d <worksAt> ?c  ?d <isCitizenOf> ?b  4  2
+Rule274:  ?a <worksAt> ?b  ?a <influences> ?c  ?d <hasAcademicAdvisor> ?c  ?d <worksAt> ?b  4  6
+Rule275:  ?a <graduatedFrom> ?b  ?a <livesIn> ?c  ?d <livesIn> ?c  ?d <graduatedFrom> ?b  4  9
+Rule276:  ?a <isCitizenOf> ?b  ?a <hasWonPrize> ?c  ?d <hasWonPrize> ?c  ?d <isCitizenOf> ?b  4  2
+Rule277:  ?a <livesIn> ?b  ?a <hasChild> ?c  ?c <hasChild> ?d  ?d <livesIn> ?b  4  40
+Rule278:  ?a <isMarriedTo> ?b  ?c <hasChild> ?a  ?d <hasChild> ?c  ?d <hasChild> ?b  4  173
+Rule279:  ?a <wasBornIn> ?b  ?c <isLeaderOf> ?a  ?c <isCitizenOf> ?d  ?b <isLocatedIn> ?d  4  3
+Rule280:  ?a <directed> ?b  ?c <isMarriedTo> ?a  ?c <hasChild> ?d  ?d <produced> ?b  4  3
+Rule281:  ?a <produced> ?b  ?a <produced> ?c  ?d <produced> ?c  ?d <directed> ?b  4  2
+Rule282:  ?a <participatedIn> ?b  ?c <livesIn> ?a  ?c <livesIn> ?d  ?d <participatedIn> ?b  4  60
+Rule283:  ?a <livesIn> ?b  ?a <livesIn> ?c  ?d <isCitizenOf> ?c  ?d <diedIn> ?b  4  5
+Rule284:  ?a <hasMusicalRole> ?b  ?a <actedIn> ?c  ?d <actedIn> ?c  ?d <hasMusicalRole> ?b  4  4
+Rule285:  ?a <wasBornIn> ?b  ?a <isMarriedTo> ?c  ?c <wasBornIn> ?d  ?b <dealsWith> ?d  4  3
+Rule286:  ?a <created> ?b  ?a <created> ?c  ?d <created> ?c  ?d <directed> ?b  4  3
+Rule287:  ?a <created> ?b  ?c <influences> ?a  ?c <influences> ?d  ?d <produced> ?b  4  6
+Rule288:  ?a <diedIn> ?b  ?a <graduatedFrom> ?c  ?d <graduatedFrom> ?c  ?d <wasBornIn> ?b  4  2
+Rule289:  ?a <actedIn> ?b  ?a <created> ?c  ?d <directed> ?c  ?d <created> ?b  4  19
+Rule290:  ?a <participatedIn> ?b  ?c <isCitizenOf> ?a  ?c <livesIn> ?d  ?d <participatedIn> ?b  4  74
+Rule291:  ?a <diedIn> ?b  ?a <isCitizenOf> ?c  ?d <dealsWith> ?c  ?d <hasCapital> ?b  4  12
+Rule292:  ?a <influences> ?b  ?c <influences> ?a  ?c <actedIn> ?d  ?b <directed> ?d  4  25
+Rule293:  ?a <wasBornIn> ?b  ?a <holdsPoliticalPosition> ?c  ?d <holdsPoliticalPosition> ?c  ?d <wasBornIn> ?b  4  1
+Rule294:  ?a <hasChild> ?b  ?a <wasBornIn> ?c  ?d <wasBornIn> ?c  ?d <hasChild> ?b  4  9
+Rule295:  ?a <actedIn> ?b  ?a <actedIn> ?c  ?d <actedIn> ?c  ?d <actedIn> ?b  4  10
+Rule296:  ?a <hasAcademicAdvisor> ?b  ?a <hasWonPrize> ?c  ?d <hasWonPrize> ?c  ?d <hasAcademicAdvisor> ?b  4  2
+Rule297:  ?a <isLocatedIn> ?b  ?c <worksAt> ?a  ?d <hasAcademicAdvisor> ?c  ?d <livesIn> ?b  4  3
+Rule298:  ?a <hasWonPrize> ?b  ?a <produced> ?c  ?d <created> ?c  ?d <hasWonPrize> ?b  4  1
+Rule299:  ?a <hasWonPrize> ?b  ?a <influences> ?c  ?d <hasAcademicAdvisor> ?c  ?d <hasWonPrize> ?b  4  6
+Rule300:  ?a <wasBornIn> ?b  ?a <diedIn> ?c  ?d <hasCapital> ?c  ?b <isLocatedIn> ?d  4  2
+Rule301:  ?a <isCitizenOf> ?b  ?a <wasBornIn> ?c  ?d <wasBornIn> ?c  ?d <isLocatedIn> ?b  4  1
+Rule302:  ?a <isLocatedIn> ?b  ?c <diedIn> ?a  ?c <isMarriedTo> ?d  ?d <isCitizenOf> ?b  4  3
+Rule303:  ?a <actedIn> ?b  ?a <actedIn> ?c  ?d <produced> ?c  ?d <actedIn> ?b  4  26
+Rule304:  ?a <graduatedFrom> ?b  ?a <isCitizenOf> ?c  ?d <isCitizenOf> ?c  ?d <worksAt> ?b  4  3
+Rule305:  ?a <isCitizenOf> ?b  ?a <graduatedFrom> ?c  ?d <graduatedFrom> ?c  ?d <isCitizenOf> ?b  4  15
+Rule306:  ?a <diedIn> ?b  ?a <directed> ?c  ?d <created> ?c  ?d <diedIn> ?b  4  1
+Rule307:  ?a <produced> ?b  ?a <produced> ?c  ?d <actedIn> ?c  ?d <produced> ?b  4  16
+Rule308:  ?a <isCitizenOf> ?b  ?c <isMarriedTo> ?a  ?c <diedIn> ?d  ?b <hasCapital> ?d  4  1
+Rule309:  ?a <graduatedFrom> ?b  ?c <influences> ?a  ?c <influences> ?d  ?d <graduatedFrom> ?b  4  13
+Rule310:  ?a <isCitizenOf> ?b  ?a <diedIn> ?c  ?d <diedIn> ?c  ?d <isCitizenOf> ?b  4  6
+Rule311:  ?a <imports> ?b  ?a <hasCurrency> ?c  ?d <hasCurrency> ?c  ?d <exports> ?b  4  1
+Rule312:  ?a <livesIn> ?b  ?a <holdsPoliticalPosition> ?c  ?d <holdsPoliticalPosition> ?c  ?d <wasBornIn> ?b  4  1
+Rule313:  ?a <dealsWith> ?b  ?c <dealsWith> ?a  ?d <dealsWith> ?c  ?b <dealsWith> ?d  4  24
+Rule314:  ?a <directed> ?b  ?a <directed> ?c  ?d <created> ?c  ?d <created> ?b  4  4
+Rule315:  ?a <playsFor> ?b  ?a <playsFor> ?c  ?d <playsFor> ?c  ?d <playsFor> ?b  4  14
+Rule316:  ?a <hasChild> ?b  ?a <hasChild> ?c  ?d <hasChild> ?c  ?d <hasChild> ?b  4  6
+Rule317:  ?a <imports> ?b  ?a <exports> ?c  ?d <imports> ?c  ?d <imports> ?b  4  707
+Rule318:  ?a <wasBornIn> ?b  ?a <isCitizenOf> ?c  ?d <livesIn> ?c  ?d <wasBornIn> ?b  4  8
+Rule319:  ?a <diedIn> ?b  ?a <livesIn> ?c  ?d <livesIn> ?c  ?d <diedIn> ?b  4  1
+Rule320:  ?a <isMarriedTo> ?b  ?a <participatedIn> ?c  ?d <participatedIn> ?c  ?b <hasChild> ?d  4  2
+Rule321:  ?a <wasBornIn> ?b  ?a <livesIn> ?c  ?d <isCitizenOf> ?c  ?d <diedIn> ?b  4  3
+Rule322:  ?a <influences> ?b  ?c <influences> ?a  ?c <diedIn> ?d  ?b <diedIn> ?d  4  42
+Rule323:  ?a <exports> ?b  ?a <hasCurrency> ?c  ?d <hasCurrency> ?c  ?d <imports> ?b  4  1
+Rule324:  ?a <wasBornIn> ?b  ?c <hasChild> ?a  ?c <hasChild> ?d  ?d <diedIn> ?b  4  18
+Rule325:  ?a <diedIn> ?b  ?a <isCitizenOf> ?c  ?d <isCitizenOf> ?c  ?d <isLocatedIn> ?b  4  4
+Rule326:  ?a <wasBornIn> ?b  ?c <hasChild> ?a  ?c <isMarriedTo> ?d  ?d <wasBornIn> ?b  4  87
+Rule327:  ?a <isCitizenOf> ?b  ?a <influences> ?c  ?c <isCitizenOf> ?d  ?d <dealsWith> ?b  4  9
+Rule328:  ?a <wasBornIn> ?b  ?a <actedIn> ?c  ?d <actedIn> ?c  ?d <isLocatedIn> ?b  4  5
+Rule329:  ?a <graduatedFrom> ?b  ?a <isCitizenOf> ?c  ?d <livesIn> ?c  ?d <worksAt> ?b  4  2
+Rule330:  ?a <isMarriedTo> ?b  ?a <diedIn> ?c  ?d <isLocatedIn> ?c  ?b <hasChild> ?d  4  1
+Rule331:  ?a <dealsWith> ?b  ?a <hasCapital> ?c  ?d <diedIn> ?c  ?d <isCitizenOf> ?b  4  1
+Rule332:  ?a <influences> ?b  ?a <influences> ?c  ?c <influences> ?d  ?d <hasAcademicAdvisor> ?b  4  3
+Rule333:  ?a <directed> ?b  ?a <directed> ?c  ?d <actedIn> ?c  ?d <actedIn> ?b  4  13
+Rule334:  ?a <participatedIn> ?b  ?a <imports> ?c  ?d <imports> ?c  ?d <participatedIn> ?b  4  493
+Rule335:  ?a <created> ?b  ?a <created> ?c  ?d <created> ?c  ?d <actedIn> ?b  4  8
+Rule336:  ?a <hasAcademicAdvisor> ?b  ?a <graduatedFrom> ?c  ?d <graduatedFrom> ?c  ?b <influences> ?d  4  3
+Rule337:  ?a <wasBornIn> ?b  ?a <livesIn> ?c  ?d <livesIn> ?c  ?d <livesIn> ?b  4  11
+Rule338:  ?a <isLocatedIn> ?b  ?c <wasBornIn> ?a  ?c <holdsPoliticalPosition> ?d  ?b <hasCapital> ?d  4  1
+Rule339:  ?a <hasWonPrize> ?b  ?a <actedIn> ?c  ?d <created> ?c  ?d <hasWonPrize> ?b  4  7
+Rule340:  ?a <actedIn> ?b  ?a <directed> ?c  ?d <produced> ?c  ?d <produced> ?b  4  11
+Rule341:  ?a <holdsPoliticalPosition> ?b  ?a <livesIn> ?c  ?d <livesIn> ?c  ?d <holdsPoliticalPosition> ?b  4  2
+Rule342:  ?a <hasAcademicAdvisor> ?b  ?a <hasAcademicAdvisor> ?c  ?c <graduatedFrom> ?d  ?b <graduatedFrom> ?d  4  9
+Rule343:  ?a <isLocatedIn> ?b  ?c <diedIn> ?a  ?c <hasChild> ?d  ?d <isCitizenOf> ?b  4  3
+Rule344:  ?a <hasWonPrize> ?b  ?a <created> ?c  ?d <created> ?c  ?d <hasWonPrize> ?b  4  2
+Rule345:  ?a <participatedIn> ?b  ?a <hasCurrency> ?c  ?d <hasCurrency> ?c  ?d <participatedIn> ?b  4  23
+Rule346:  ?a <worksAt> ?b  ?a <hasAcademicAdvisor> ?c  ?c <livesIn> ?d  ?b <isLocatedIn> ?d  4  3
+Rule347:  ?a <hasWonPrize> ?b  ?a <actedIn> ?c  ?d <directed> ?c  ?d <hasWonPrize> ?b  4  7
+Rule348:  ?a <isMarriedTo> ?b  ?a <wasBornIn> ?c  ?d <wasBornIn> ?c  ?d <isMarriedTo> ?b  4  1
+Rule349:  ?a <participatedIn> ?b  ?a <participatedIn> ?c  ?d <participatedIn> ?c  ?d <participatedIn> ?b  4  10
+Rule350:  ?a <imports> ?b  ?a <imports> ?c  ?d <exports> ?c  ?d <exports> ?b  4  742
+Rule351:  ?a <directed> ?b  ?a <produced> ?c  ?d <created> ?c  ?d <produced> ?b  4  11
+Rule352:  ?a <exports> ?b  ?c <dealsWith> ?a  ?c <dealsWith> ?d  ?d <imports> ?b  4  1578
+Rule353:  ?a <diedIn> ?b  ?a <isCitizenOf> ?c  ?d <livesIn> ?c  ?d <wasBornIn> ?b  4  1
+Rule354:  ?a <livesIn> ?b  ?a <graduatedFrom> ?c  ?d <worksAt> ?c  ?d <livesIn> ?b  4  1
+Rule355:  ?a <isMarriedTo> ?b  ?a <diedIn> ?c  ?d <diedIn> ?c  ?d <hasChild> ?b  4  1
+Rule356:  ?a <isCitizenOf> ?b  ?c <hasChild> ?a  ?c <diedIn> ?d  ?b <hasCapital> ?d  4  1
+Rule357:  ?a <hasAcademicAdvisor> ?b  ?a <hasWonPrize> ?c  ?d <hasWonPrize> ?c  ?d <influences> ?b  4  1
+Rule358:  ?a <wasBornIn> ?b  ?a <isCitizenOf> ?c  ?d <isCitizenOf> ?c  ?d <diedIn> ?b  4  48
+Rule359:  ?a <diedIn> ?b  ?c <hasChild> ?a  ?d <hasChild> ?c  ?d <wasBornIn> ?b  4  30
+Rule360:  ?a <created> ?b  ?a <actedIn> ?c  ?d <directed> ?c  ?d <directed> ?b  4  9
+Rule361:  ?a <dealsWith> ?b  ?a <dealsWith> ?c  ?d <livesIn> ?c  ?d <isCitizenOf> ?b  4  9
+Rule362:  ?a <actedIn> ?b  ?a <created> ?c  ?d <directed> ?c  ?d <produced> ?b  4  6
+Rule363:  ?a <hasWonPrize> ?b  ?a <hasMusicalRole> ?c  ?d <hasMusicalRole> ?c  ?d <hasWonPrize> ?b  4  29
+Rule364:  ?a <isLocatedIn> ?b  ?c <diedIn> ?a  ?c <isCitizenOf> ?d  ?b <isLocatedIn> ?d  4  3
+Rule365:  ?a <isCitizenOf> ?b  ?a <livesIn> ?c  ?d <wasBornIn> ?c  ?d <isCitizenOf> ?b  4  2
+Rule366:  ?a <holdsPoliticalPosition> ?b  ?a <diedIn> ?c  ?d <diedIn> ?c  ?d <holdsPoliticalPosition> ?b  4  1
+Rule367:  ?a <exports> ?b  ?a <hasCurrency> ?c  ?d <hasCurrency> ?c  ?d <exports> ?b  4  3
+Rule368:  ?a <hasCurrency> ?b  ?a <hasCapital> ?c  ?d <hasCapital> ?c  ?d <hasCurrency> ?b  4  4
+Rule369:  ?a <influences> ?b  ?c <influences> ?a  ?c <influences> ?d  ?d <influences> ?b  4  21
+Rule370:  ?a <worksAt> ?b  ?a <livesIn> ?c  ?d <isCitizenOf> ?c  ?d <graduatedFrom> ?b  4  2
+Rule371:  ?a <diedIn> ?b  ?c <influences> ?a  ?d <isMarriedTo> ?c  ?d <wasBornIn> ?b  4  1
+Rule372:  ?a <worksAt> ?b  ?a <livesIn> ?c  ?d <livesIn> ?c  ?d <graduatedFrom> ?b  4  2
+Rule373:  ?a <directed> ?b  ?a <directed> ?c  ?d <produced> ?c  ?d <produced> ?b  4  4
+Rule374:  ?a <wasBornIn> ?b  ?a <hasChild> ?c  ?c <isCitizenOf> ?d  ?d <hasCapital> ?b  4  3
+Rule375:  ?a <diedIn> ?b  ?c <hasAcademicAdvisor> ?a  ?c <isCitizenOf> ?d  ?d <hasCapital> ?b  4  1
+Rule376:  ?a <imports> ?b  ?a <isLocatedIn> ?c  ?d <isLocatedIn> ?c  ?d <imports> ?b  4  4
+Rule377:  ?a <dealsWith> ?b  ?a <hasOfficialLanguage> ?c  ?d <hasOfficialLanguage> ?c  ?b <dealsWith> ?d  4  659
+Rule378:  ?a <participatedIn> ?b  ?a <exports> ?c  ?d <exports> ?c  ?d <participatedIn> ?b  4  547
+Rule379:  ?a <hasWonPrize> ?b  ?a <hasWonPrize> ?c  ?d <hasWonPrize> ?c  ?d <hasWonPrize> ?b  4  2
+Rule380:  ?a <imports> ?b  ?a <participatedIn> ?c  ?d <participatedIn> ?c  ?d <imports> ?b  4  624
+Rule381:  ?a <wasBornIn> ?b  ?a <holdsPoliticalPosition> ?c  ?d <hasCapital> ?c  ?b <isLocatedIn> ?d  4  1
+Rule382:  ?a <livesIn> ?b  ?a <livesIn> ?c  ?c <hasCapital> ?d  ?b <hasCapital> ?d  4  1
+Rule383:  ?a <exports> ?b  ?a <participatedIn> ?c  ?d <participatedIn> ?c  ?d <exports> ?b  4  626
+Rule384:  ?a <produced> ?b  ?c <influences> ?a  ?c <influences> ?d  ?d <created> ?b  4  9
+Rule385:  ?a <hasChild> ?b  ?a <diedIn> ?c  ?d <diedIn> ?c  ?b <influences> ?d  4  1
+Rule386:  ?a <isCitizenOf> ?b  ?a <isLeaderOf> ?c  ?c <wasBornIn> ?d  ?b <hasCapital> ?d  4  3
+Rule387:  ?a <hasWonPrize> ?b  ?a <actedIn> ?c  ?d <actedIn> ?c  ?d <hasWonPrize> ?b  4  97
+Rule388:  ?a <directed> ?b  ?a <produced> ?c  ?d <produced> ?c  ?d <created> ?b  4  8
+Rule389:  ?a <hasWonPrize> ?b  ?a <worksAt> ?c  ?d <worksAt> ?c  ?d <hasWonPrize> ?b  4  3
+Rule390:  ?a <hasChild> ?b  ?c <isMarriedTo> ?a  ?c <produced> ?d  ?b <created> ?d  4  3
+Rule391:  ?a <hasWonPrize> ?b  ?a <livesIn> ?c  ?d <isCitizenOf> ?c  ?d <hasWonPrize> ?b  4  1
+Rule392:  ?a <hasCurrency> ?b  ?a <imports> ?c  ?d <imports> ?c  ?d <hasCurrency> ?b  4  8
+Rule393:  ?a <actedIn> ?b  ?a <actedIn> ?c  ?d <actedIn> ?c  ?d <created> ?b  4  2
+Rule394:  ?a <diedIn> ?b  ?a <graduatedFrom> ?c  ?d <graduatedFrom> ?c  ?d <diedIn> ?b  4  2
+Rule395:  ?a <directed> ?b  ?a <directed> ?c  ?d <actedIn> ?c  ?d <created> ?b  4  7
+Rule396:  ?a <isLocatedIn> ?b  ?a <isCitizenOf> ?c  ?d <livesIn> ?c  ?d <wasBornIn> ?b  4  1
+Rule397:  ?a <isInterestedIn> ?b  ?a <influences> ?c  ?d <influences> ?c  ?d <isInterestedIn> ?b  4  19
+Rule398:  ?a <wasBornIn> ?b  ?a <diedIn> ?c  ?d <diedIn> ?c  ?d <wasBornIn> ?b  4  7
+Rule399:  ?a <livesIn> ?b  ?a <isPoliticianOf> ?c  ?d <isPoliticianOf> ?c  ?d <diedIn> ?b  4  1
+Rule400:  ?a <wasBornIn> ?b  ?a <diedIn> ?c  ?d <livesIn> ?c  ?d <wasBornIn> ?b  4  1
+Rule401:  ?a <hasAcademicAdvisor> ?b  ?a <worksAt> ?c  ?d <worksAt> ?c  ?d <hasAcademicAdvisor> ?b  4  2
+Rule402:  ?a <isLocatedIn> ?b  ?a <wasBornIn> ?c  ?d <livesIn> ?c  ?d <livesIn> ?b  4  2
+Rule403:  ?a <isCitizenOf> ?b  ?a <livesIn> ?c  ?d <livesIn> ?c  ?d <livesIn> ?b  4  6
+Rule404:  ?a <diedIn> ?b  ?a <hasChild> ?c  ?c <hasChild> ?d  ?d <diedIn> ?b  4  10
+Rule405:  ?a <influences> ?b  ?a <actedIn> ?c  ?d <actedIn> ?c  ?b <influences> ?d  4  4
+Rule406:  ?a <isLocatedIn> ?b  ?c <wasBornIn> ?a  ?c <diedIn> ?d  ?b <hasCapital> ?d  4  7
+Rule407:  ?a <isLocatedIn> ?b  ?a <wasBornIn> ?c  ?d <diedIn> ?c  ?d <isCitizenOf> ?b  4  1
+Rule408:  ?a <created> ?b  ?a <created> ?c  ?d <hasChild> ?c  ?d <hasChild> ?b  4  3
+Rule409:  ?a <isCitizenOf> ?b  ?a <isLocatedIn> ?c  ?d <wasBornIn> ?c  ?d <isCitizenOf> ?b  4  4
+Rule410:  ?a <created> ?b  ?a <hasWonPrize> ?c  ?d <hasWonPrize> ?c  ?d <actedIn> ?b  4  3
+Rule411:  ?a <wasBornIn> ?b  ?a <isCitizenOf> ?c  ?d <isLocatedIn> ?c  ?d <wasBornIn> ?b  4  1
+Rule412:  ?a <holdsPoliticalPosition> ?b  ?a <graduatedFrom> ?c  ?d <graduatedFrom> ?c  ?d <holdsPoliticalPosition> ?b  4  1
+Rule413:  ?a <hasChild> ?b  ?a <hasChild> ?c  ?c <isKnownFor> ?d  ?b <isKnownFor> ?d  4  14
+Rule414:  ?a <isMarriedTo> ?b  ?a <hasChild> ?c  ?c <actedIn> ?d  ?b <actedIn> ?d  4  6
+Rule415:  ?a <wasBornIn> ?b  ?a <graduatedFrom> ?c  ?d <graduatedFrom> ?c  ?d <wasBornIn> ?b  4  11
+Rule416:  ?a <livesIn> ?b  ?a <diedIn> ?c  ?d <diedIn> ?c  ?d <wasBornIn> ?b  4  1
+Rule417:  ?a <isLeaderOf> ?b  ?a <graduatedFrom> ?c  ?d <graduatedFrom> ?c  ?d <wasBornIn> ?b  4  1
+Rule418:  ?a <isMarriedTo> ?b  ?a <hasChild> ?c  ?c <created> ?d  ?b <created> ?d  4  6
+Rule419:  ?a <diedIn> ?b  ?a <hasWonPrize> ?c  ?d <hasWonPrize> ?c  ?d <diedIn> ?b  4  4
+Rule420:  ?a <livesIn> ?b  ?c <holdsPoliticalPosition> ?a  ?c <hasChild> ?d  ?d <isCitizenOf> ?b  4  3
+Rule421:  ?a <isCitizenOf> ?b  ?a <diedIn> ?c  ?d <diedIn> ?c  ?d <livesIn> ?b  4  2
+Rule422:  ?a <imports> ?b  ?a <participatedIn> ?c  ?d <participatedIn> ?c  ?d <exports> ?b  4  472
+Rule423:  ?a <isCitizenOf> ?b  ?a <diedIn> ?c  ?d <livesIn> ?c  ?d <isCitizenOf> ?b  4  8
+Rule424:  ?a <isLeaderOf> ?b  ?a <actedIn> ?c  ?d <actedIn> ?c  ?d <isLeaderOf> ?b  4  4
+Rule425:  ?a <dealsWith> ?b  ?a <participatedIn> ?c  ?d <participatedIn> ?c  ?b <dealsWith> ?d  4  6
+Rule426:  ?a <hasCapital> ?b  ?a <participatedIn> ?c  ?d <participatedIn> ?c  ?b <isLocatedIn> ?d  4  2
+Rule427:  ?a <wasBornIn> ?b  ?a <diedIn> ?c  ?d <diedIn> ?c  ?d <livesIn> ?b  4  3
+Rule428:  ?a <wasBornIn> ?b  ?a <livesIn> ?c  ?d <livesIn> ?c  ?d <wasBornIn> ?b  4  4
+Rule429:  ?a <hasChild> ?b  ?a <actedIn> ?c  ?d <actedIn> ?c  ?d <hasChild> ?b  4  1
+Rule430:  ?a <created> ?b  ?a <created> ?c  ?d <directed> ?c  ?d <created> ?b  4  7
+Rule431:  ?a <influences> ?b  ?a <isInterestedIn> ?c  ?d <isInterestedIn> ?c  ?d <influences> ?b  4  2
+Rule432:  ?a <directed> ?b  ?a <directed> ?c  ?d <created> ?c  ?d <produced> ?b  4  2
+Rule433:  ?a <imports> ?b  ?a <hasOfficialLanguage> ?c  ?d <hasOfficialLanguage> ?c  ?d <imports> ?b  4  92
+Rule434:  ?a <livesIn> ?b  ?a <livesIn> ?c  ?c <imports> ?d  ?b <imports> ?d  4  3
+Rule435:  ?a <exports> ?b  ?c <livesIn> ?a  ?c <isCitizenOf> ?d  ?d <exports> ?b  4  3
+Rule436:  ?a <actedIn> ?b  ?a <hasWonPrize> ?c  ?d <hasWonPrize> ?c  ?d <actedIn> ?b  4  51
+Rule437:  ?a <dealsWith> ?b  ?a <isLocatedIn> ?c  ?d <isLocatedIn> ?c  ?b <dealsWith> ?d  4  6
+Rule438:  ?a <directed> ?b  ?a <hasWonPrize> ?c  ?d <hasWonPrize> ?c  ?d <produced> ?b  4  1
+Rule439:  ?a <isLocatedIn> ?b  ?c <diedIn> ?a  ?c <holdsPoliticalPosition> ?d  ?d <livesIn> ?b  4  1
+Rule440:  ?a <directed> ?b  ?a <produced> ?c  ?d <produced> ?c  ?d <actedIn> ?b  4  15
+Rule441:  ?a <imports> ?b  ?a <exports> ?c  ?d <exports> ?c  ?d <imports> ?b  4  708
+Rule442:  ?a <hasCurrency> ?b  ?c <isLeaderOf> ?a  ?c <isLeaderOf> ?d  ?d <hasCurrency> ?b  4  4
+Rule443:  ?a <actedIn> ?b  ?a <produced> ?c  ?d <directed> ?c  ?d <created> ?b  4  8
+Rule444:  ?a <participatedIn> ?b  ?a <participatedIn> ?c  ?c <isLocatedIn> ?d  ?d <participatedIn> ?b  4  30
+Rule445:  ?a <diedIn> ?b  ?c <influences> ?a  ?c <hasChild> ?d  ?d <diedIn> ?b  4  13
+Rule446:  ?a <wasBornIn> ?b  ?a <isCitizenOf> ?c  ?d <isCitizenOf> ?c  ?d <isLocatedIn> ?b  4  3
+Rule447:  ?a <isMarriedTo> ?b  ?c <isMarriedTo> ?a  ?c <isMarriedTo> ?d  ?b <isMarriedTo> ?d  4  51
+Rule448:  ?a <hasOfficialLanguage> ?b  ?a <imports> ?c  ?d <exports> ?c  ?d <hasOfficialLanguage> ?b  4  66
+Rule449:  ?a <produced> ?b  ?a <actedIn> ?c  ?d <created> ?c  ?d <directed> ?b  4  9
+Rule450:  ?a <isCitizenOf> ?b  ?a <wasBornIn> ?c  ?c <isLocatedIn> ?d  ?d <isLocatedIn> ?b  4  16
+Rule451:  ?a <influences> ?b  ?a <diedIn> ?c  ?d <diedIn> ?c  ?d <influences> ?b  4  1
+Rule452:  ?a <isLocatedIn> ?b  ?a <hasOfficialLanguage> ?c  ?d <hasOfficialLanguage> ?c  ?d <isLocatedIn> ?b  4  5
+Rule453:  ?a <isCitizenOf> ?b  ?a <influences> ?c  ?c <diedIn> ?d  ?b <hasCapital> ?d  4  5
+Rule454:  ?a <isKnownFor> ?b  ?c <influences> ?a  ?c <influences> ?d  ?d <isKnownFor> ?b  4  5
+Rule455:  ?a <hasOfficialLanguage> ?b  ?a <participatedIn> ?c  ?d <participatedIn> ?c  ?d <hasOfficialLanguage> ?b  4  141
+Rule456:  ?a <produced> ?b  ?a <produced> ?c  ?d <created> ?c  ?d <actedIn> ?b  4  12
+Rule457:  ?a <isLocatedIn> ?b  ?a <isCitizenOf> ?c  ?d <isCitizenOf> ?c  ?d <wasBornIn> ?b  4  3
+Rule458:  ?a <hasWonPrize> ?b  ?a <wasBornIn> ?c  ?d <diedIn> ?c  ?d <hasWonPrize> ?b  4  12
+Rule459:  ?a <directed> ?b  ?a <created> ?c  ?d <created> ?c  ?d <actedIn> ?b  4  20
+Rule460:  ?a <isMarriedTo> ?b  ?a <wasBornIn> ?c  ?d <diedIn> ?c  ?b <influences> ?d  4  1
+Rule461:  ?a <isLocatedIn> ?b  ?a <participatedIn> ?c  ?d <participatedIn> ?c  ?d <dealsWith> ?b  4  4
+Rule462:  ?a <created> ?b  ?a <diedIn> ?c  ?d <diedIn> ?c  ?d <created> ?b  4  1
+Rule463:  ?a <created> ?b  ?a <created> ?c  ?d <created> ?c  ?d <produced> ?b  4  3
+Rule464:  ?a <hasWonPrize> ?b  ?a <isCitizenOf> ?c  ?d <isCitizenOf> ?c  ?d <hasWonPrize> ?b  4  2
+Rule465:  ?a <created> ?b  ?a <created> ?c  ?d <actedIn> ?c  ?d <actedIn> ?b  4  12
+Rule466:  ?a <created> ?b  ?a <hasWonPrize> ?c  ?d <hasWonPrize> ?c  ?d <produced> ?b  4  1
+Rule467:  ?a <participatedIn> ?b  ?a <isMarriedTo> ?c  ?c <hasChild> ?d  ?d <participatedIn> ?b  4  76
+Rule468:  ?a <created> ?b  ?a <hasWonPrize> ?c  ?d <hasWonPrize> ?c  ?d <created> ?b  4  26
+Rule469:  ?a <created> ?b  ?a <created> ?c  ?d <created> ?c  ?d <created> ?b  4  27
+Rule470:  ?a <isCitizenOf> ?b  ?a <diedIn> ?c  ?d <wasBornIn> ?c  ?d <isCitizenOf> ?b  4  87
+Rule471:  ?a <isMarriedTo> ?b  ?c <isMarriedTo> ?a  ?d <isMarriedTo> ?c  ?d <hasChild> ?b  4  18
+Rule472:  ?a <hasChild> ?b  ?a <diedIn> ?c  ?d <hasCapital> ?c  ?b <isCitizenOf> ?d  4  1
+Rule473:  ?a <actedIn> ?b  ?a <influences> ?c  ?d <influences> ?c  ?d <produced> ?b  4  16
+Rule474:  ?a <actedIn> ?b  ?a <produced> ?c  ?d <created> ?c  ?d <produced> ?b  4  14
+Rule475:  ?a <influences> ?b  ?a <created> ?c  ?d <actedIn> ?c  ?b <influences> ?d  4  5
+Rule476:  ?a <actedIn> ?b  ?a <isLeaderOf> ?c  ?d <isLeaderOf> ?c  ?d <actedIn> ?b  4  4
+Rule477:  ?a <graduatedFrom> ?b  ?a <livesIn> ?c  ?d <wasBornIn> ?c  ?d <graduatedFrom> ?b  4  2
+Rule478:  ?a <wasBornIn> ?b  ?a <isCitizenOf> ?c  ?d <livesIn> ?c  ?d <livesIn> ?b  4  22
+Rule479:  ?a <isLocatedIn> ?b  ?a <wasBornIn> ?c  ?d <wasBornIn> ?c  ?d <isCitizenOf> ?b  4  4
+Rule480:  ?a <directed> ?b  ?a <directed> ?c  ?d <produced> ?c  ?d <actedIn> ?b  4  3
+Rule481:  ?a <exports> ?b  ?a <exports> ?c  ?d <exports> ?c  ?d <imports> ?b  4  261
+Rule482:  ?a <isMarriedTo> ?b  ?a <graduatedFrom> ?c  ?d <graduatedFrom> ?c  ?d <isMarriedTo> ?b  4  1
+Rule483:  ?a <hasChild> ?b  ?a <directed> ?c  ?d <actedIn> ?c  ?d <hasChild> ?b  4  3
+Rule484:  ?a <wasBornIn> ?b  ?a <isCitizenOf> ?c  ?d <isCitizenOf> ?c  ?d <wasBornIn> ?b  4  4
+Rule485:  ?a <directed> ?b  ?a <directed> ?c  ?d <produced> ?c  ?d <created> ?b  4  3
+Rule486:  ?a <diedIn> ?b  ?c <isLeaderOf> ?a  ?c <isLeaderOf> ?d  ?d <wasBornIn> ?b  4  3
+Rule487:  ?a <created> ?b  ?a <directed> ?c  ?d <created> ?c  ?d <produced> ?b  4  4
+Rule488:  ?a <wasBornIn> ?b  ?a <livesIn> ?c  ?c <isLocatedIn> ?d  ?b <isLocatedIn> ?d  4  15
+Rule489:  ?a <actedIn> ?b  ?a <actedIn> ?c  ?d <directed> ?c  ?d <produced> ?b  4  3
+Rule490:  ?a <diedIn> ?b  ?a <hasChild> ?c  ?c <isLeaderOf> ?d  ?d <hasCapital> ?b  4  3
+Rule491:  ?a <graduatedFrom> ?b  ?a <wasBornIn> ?c  ?d <wasBornIn> ?c  ?d <graduatedFrom> ?b  4  3
+Rule492:  ?a <hasCurrency> ?b  ?c <isLocatedIn> ?a  ?d <hasCapital> ?c  ?d <hasCurrency> ?b  4  9
+Rule493:  ?a <holdsPoliticalPosition> ?b  ?a <holdsPoliticalPosition> ?c  ?d <holdsPoliticalPosition> ?c  ?d <holdsPoliticalPosition> ?b  4  2
+Rule494:  ?a <isLocatedIn> ?b  ?a <diedIn> ?c  ?d <hasCapital> ?c  ?b <isLocatedIn> ?d  4  1
+Rule495:  ?a <produced> ?b  ?a <produced> ?c  ?d <produced> ?c  ?d <created> ?b  4  3
+Rule496:  ?a <isLocatedIn> ?b  ?a <imports> ?c  ?d <imports> ?c  ?d <isLocatedIn> ?b  4  6
+Rule497:  ?a <participatedIn> ?b  ?a <hasOfficialLanguage> ?c  ?d <hasOfficialLanguage> ?c  ?d <participatedIn> ?b  4  141
+Rule498:  ?a <isCitizenOf> ?b  ?c <influences> ?a  ?d <influences> ?c  ?d <isCitizenOf> ?b  4  13
+Rule499:  ?a <actedIn> ?b  ?a <produced> ?c  ?d <directed> ?c  ?d <directed> ?b  4  3
+Rule500:  ?a <livesIn> ?b  ?a <isCitizenOf> ?c  ?d <isCitizenOf> ?c  ?d <livesIn> ?b  4  2
+Rule501:  ?a <dealsWith> ?b  ?a <participatedIn> ?c  ?d <participatedIn> ?c  ?d <isLocatedIn> ?b  4  8
+Rule502:  ?a <hasCapital> ?b  ?c <isLocatedIn> ?a  ?d <isLocatedIn> ?c  ?d <diedIn> ?b  4  2
+Rule503:  ?a <participatedIn> ?b  ?c <dealsWith> ?a  ?d <dealsWith> ?c  ?b <isLocatedIn> ?d  4  14
+Rule504:  ?a <produced> ?b  ?a <produced> ?c  ?d <produced> ?c  ?d <produced> ?b  4  4
+Rule505:  ?a <livesIn> ?b  ?a <livesIn> ?c  ?c <hasCurrency> ?d  ?b <hasCurrency> ?d  4  6
+Rule506:  ?a <isCitizenOf> ?b  ?a <graduatedFrom> ?c  ?d <graduatedFrom> ?c  ?d <livesIn> ?b  4  2
+Rule507:  ?a <created> ?b  ?a <actedIn> ?c  ?d <created> ?c  ?d <produced> ?b  4  6
+Rule508:  ?a <influences> ?b  ?a <isCitizenOf> ?c  ?c <dealsWith> ?d  ?b <isCitizenOf> ?d  4  5
+Rule509:  ?a <diedIn> ?b  ?a <livesIn> ?c  ?d <isCitizenOf> ?c  ?d <diedIn> ?b  4  2
+Rule510:  ?a <livesIn> ?b  ?a <wasBornIn> ?c  ?d <wasBornIn> ?c  ?d <diedIn> ?b  4  4
+Rule511:  ?a <hasWonPrize> ?b  ?a <produced> ?c  ?d <directed> ?c  ?d <hasWonPrize> ?b  4  1
+Rule512:  ?a <isMarriedTo> ?b  ?a <hasWonPrize> ?c  ?d <hasWonPrize> ?c  ?b <hasChild> ?d  4  1
+Rule513:  ?a <hasChild> ?b  ?a <livesIn> ?c  ?d <livesIn> ?c  ?d <hasChild> ?b  4  1
+Rule514:  ?a <wasBornIn> ?b  ?a <isMarriedTo> ?c  ?d <isMarriedTo> ?c  ?d <wasBornIn> ?b  4  3
+Rule515:  ?a <created> ?b  ?c <influences> ?a  ?c <influences> ?d  ?d <actedIn> ?b  4  17
+Rule516:  ?a <isLocatedIn> ?b  ?c <wasBornIn> ?a  ?c <livesIn> ?d  ?b <hasCapital> ?d  4  4
+Rule517:  ?a <hasOfficialLanguage> ?b  ?c <isLeaderOf> ?a  ?c <isLeaderOf> ?d  ?d <hasOfficialLanguage> ?b  4  3
+Rule518:  ?a <created> ?b  ?a <created> ?c  ?d <directed> ?c  ?d <directed> ?b  4  5
+Rule519:  ?a <diedIn> ?b  ?a <hasWonPrize> ?c  ?d <hasWonPrize> ?c  ?d <wasBornIn> ?b  4  6
+Rule520:  ?a <isCitizenOf> ?b  ?c <isMarriedTo> ?a  ?c <diedIn> ?d  ?d <isLocatedIn> ?b  4  1
+Rule521:  ?a <livesIn> ?b  ?a <livesIn> ?c  ?d <livesIn> ?c  ?d <diedIn> ?b  4  3
+Rule522:  ?a <wasBornIn> ?b  ?c <hasChild> ?a  ?c <created> ?d  ?d <isLocatedIn> ?b  4  3
+Rule523:  ?a <hasChild> ?b  ?c <isMarriedTo> ?a  ?c <actedIn> ?d  ?b <created> ?d  4  3
+Rule524:  ?a <produced> ?b  ?a <produced> ?c  ?d <produced> ?c  ?d <actedIn> ?b  4  10
+Rule525:  ?a <hasAcademicAdvisor> ?b  ?a <worksAt> ?c  ?d <worksAt> ?c  ?d <influences> ?b  4  1
+Rule526:  ?a <actedIn> ?b  ?a <wasBornIn> ?c  ?d <isLocatedIn> ?c  ?d <actedIn> ?b  4  7
+Rule527:  ?a <actedIn> ?b  ?a <actedIn> ?c  ?d <actedIn> ?c  ?d <produced> ?b  4  2
+Rule528:  ?a <graduatedFrom> ?b  ?a <hasChild> ?c  ?d <hasChild> ?c  ?d <graduatedFrom> ?b  4  1
+Rule529:  ?a <hasOfficialLanguage> ?b  ?a <hasCapital> ?c  ?c <isLocatedIn> ?d  ?d <hasOfficialLanguage> ?b  4  3
+Rule530:  ?a <exports> ?b  ?a <participatedIn> ?c  ?d <participatedIn> ?c  ?d <imports> ?b  4  364
+Rule531:  ?a <livesIn> ?b  ?a <livesIn> ?c  ?c <hasOfficialLanguage> ?d  ?b <hasOfficialLanguage> ?d  4  4
+Rule532:  ?a <isCitizenOf> ?b  ?a <hasWonPrize> ?c  ?d <hasWonPrize> ?c  ?d <livesIn> ?b  4  1
+Rule533:  ?a <influences> ?b  ?c <hasAcademicAdvisor> ?a  ?c <hasAcademicAdvisor> ?d  ?d <influences> ?b  4  10
+Rule534:  ?a <graduatedFrom> ?b  ?a <isCitizenOf> ?c  ?d <isCitizenOf> ?c  ?d <graduatedFrom> ?b  4  17
+Rule535:  ?a <diedIn> ?b  ?a <isCitizenOf> ?c  ?d <isCitizenOf> ?c  ?d <livesIn> ?b  4  2
+Rule536:  ?a <directed> ?b  ?a <produced> ?c  ?d <actedIn> ?c  ?d <actedIn> ?b  4  29
+Rule537:  ?a <isCitizenOf> ?b  ?a <isLocatedIn> ?c  ?d <isLocatedIn> ?c  ?d <isCitizenOf> ?b  4  2
+Rule538:  ?a <isLocatedIn> ?b  ?c <isLocatedIn> ?a  ?d <wasBornIn> ?c  ?d <isCitizenOf> ?b  4  7
+Rule539:  ?a <isMarriedTo> ?b  ?a <diedIn> ?c  ?d <wasBornIn> ?c  ?b <hasChild> ?d  4  3
+Rule540:  ?a <isLocatedIn> ?b  ?c <isKnownFor> ?a  ?c <created> ?d  ?d <isLocatedIn> ?b  4  3
+Rule541:  ?a <hasAcademicAdvisor> ?b  ?a <livesIn> ?c  ?d <livesIn> ?c  ?d <hasAcademicAdvisor> ?b  4  4
+Rule542:  ?a <actedIn> ?b  ?a <actedIn> ?c  ?d <created> ?c  ?d <produced> ?b  4  2
+Rule543:  ?a <created> ?b  ?a <produced> ?c  ?d <actedIn> ?c  ?d <actedIn> ?b  4  11
+Rule544:  ?a <graduatedFrom> ?b  ?a <isCitizenOf> ?c  ?d <livesIn> ?c  ?d <graduatedFrom> ?b  4  3
+Rule545:  ?a <worksAt> ?b  ?a <hasWonPrize> ?c  ?d <hasWonPrize> ?c  ?d <worksAt> ?b  4  1
+Rule546:  ?a <livesIn> ?b  ?a <isPoliticianOf> ?c  ?d <isPoliticianOf> ?c  ?d <livesIn> ?b  4  2
+Rule547:  ?a <isLocatedIn> ?b  ?c <diedIn> ?a  ?d <influences> ?c  ?d <isCitizenOf> ?b  4  11
+Rule548:  ?a <livesIn> ?b  ?a <livesIn> ?c  ?d <isCitizenOf> ?c  ?d <isLocatedIn> ?b  4  2
+Rule549:  ?a <actedIn> ?b  ?a <hasWonPrize> ?c  ?d <hasWonPrize> ?c  ?d <created> ?b  4  1
+Rule550:  ?a <actedIn> ?b  ?a <actedIn> ?c  ?d <created> ?c  ?d <created> ?b  4  7
+Rule551:  ?a <isCitizenOf> ?b  ?c <hasChild> ?a  ?c <holdsPoliticalPosition> ?d  ?d <livesIn> ?b  4  1
+Rule552:  ?a <produced> ?b  ?a <hasWonPrize> ?c  ?d <hasWonPrize> ?c  ?d <actedIn> ?b  4  3
+Rule553:  ?a <dealsWith> ?b  ?c <isLocatedIn> ?a  ?d <isLocatedIn> ?c  ?d <isCitizenOf> ?b  4  1
+Rule554:  ?a <hasChild> ?b  ?a <actedIn> ?c  ?d <created> ?c  ?d <hasChild> ?b  4  1
+Rule555:  ?a <livesIn> ?b  ?a <livesIn> ?c  ?d <livesIn> ?c  ?d <wasBornIn> ?b  4  4
+Rule556:  ?a <actedIn> ?b  ?a <actedIn> ?c  ?d <produced> ?c  ?d <directed> ?b  4  2
+Rule557:  ?a <influences> ?b  ?a <hasWonPrize> ?c  ?d <hasWonPrize> ?c  ?b <influences> ?d  4  25
+Rule558:  ?a <isLocatedIn> ?b  ?a <actedIn> ?c  ?d <actedIn> ?c  ?d <isLocatedIn> ?b  4  2
+Rule559:  ?a <directed> ?b  ?a <hasWonPrize> ?c  ?d <hasWonPrize> ?c  ?d <actedIn> ?b  4  3
+Rule560:  ?a <isCitizenOf> ?b  ?a <wasBornIn> ?c  ?d <wasBornIn> ?c  ?d <isCitizenOf> ?b  4  40
+Rule561:  ?a <isMarriedTo> ?b  ?a <wasBornIn> ?c  ?d <dealsWith> ?c  ?b <wasBornIn> ?d  4  6
+Rule562:  ?a <hasChild> ?b  ?a <diedIn> ?c  ?d <diedIn> ?c  ?d <hasChild> ?b  4  7
+Rule563:  ?a <wasBornIn> ?b  ?a <hasWonPrize> ?c  ?d <hasWonPrize> ?c  ?d <diedIn> ?b  4  3
+Rule564:  ?a <livesIn> ?b  ?a <livesIn> ?c  ?d <diedIn> ?c  ?d <isPoliticianOf> ?b  4  2
+Rule565:  ?a <isLocatedIn> ?b  ?a <isLocatedIn> ?c  ?d <isLocatedIn> ?c  ?d <isLocatedIn> ?b  4  3
+Rule566:  ?a <diedIn> ?b  ?a <created> ?c  ?d <created> ?c  ?d <diedIn> ?b  4  2
+Rule567:  ?a <hasAcademicAdvisor> ?b  ?a <livesIn> ?c  ?d <isLocatedIn> ?c  ?b <worksAt> ?d  4  3
+Rule568:  ?a <wasBornIn> ?b  ?a <livesIn> ?c  ?d <livesIn> ?c  ?d <diedIn> ?b  4  4
+Rule569:  ?a <hasWonPrize> ?b  ?a <wasBornIn> ?c  ?d <wasBornIn> ?c  ?d <hasWonPrize> ?b  4  5
+Rule570:  ?a <isMarriedTo> ?b  ?a <livesIn> ?c  ?d <livesIn> ?c  ?b <hasChild> ?d  4  11
+Rule571:  ?a <hasOfficialLanguage> ?b  ?a <imports> ?c  ?d <imports> ?c  ?d <hasOfficialLanguage> ?b  4  35
+Rule572:  ?a <produced> ?b  ?a <created> ?c  ?d <directed> ?c  ?d <directed> ?b  4  3
+Rule573:  ?a <dealsWith> ?b  ?c <dealsWith> ?a  ?d <livesIn> ?c  ?d <livesIn> ?b  4  27
+Rule574:  ?a <isCitizenOf> ?b  ?a <livesIn> ?c  ?d <isLocatedIn> ?c  ?d <isCitizenOf> ?b  4  1
+Rule575:  ?a <isLeaderOf> ?b  ?a <isLeaderOf> ?c  ?c <diedIn> ?d  ?b <diedIn> ?d  4  3
+Rule576:  ?a <hasMusicalRole> ?b  ?a <created> ?c  ?d <created> ?c  ?d <hasMusicalRole> ?b  4  3
+Rule577:  ?a <diedIn> ?b  ?c <influences> ?a  ?c <isCitizenOf> ?d  ?b <isLocatedIn> ?d  4  8
+Rule578:  ?a <hasCurrency> ?b  ?a <participatedIn> ?c  ?d <participatedIn> ?c  ?d <hasCurrency> ?b  4  23
+Rule579:  ?a <isInterestedIn> ?b  ?a <isInterestedIn> ?c  ?d <isInterestedIn> ?c  ?d <isInterestedIn> ?b  4  4
+Rule580:  ?a <hasCurrency> ?b  ?c <isCitizenOf> ?a  ?c <livesIn> ?d  ?d <hasCurrency> ?b  4  6
+Rule581:  ?a <worksAt> ?b  ?a <livesIn> ?c  ?d <livesIn> ?c  ?d <worksAt> ?b  4  4
+Rule582:  ?a <graduatedFrom> ?b  ?a <isMarriedTo> ?c  ?d <isMarriedTo> ?c  ?d <graduatedFrom> ?b  4  1
+Rule583:  ?a <diedIn> ?b  ?a <holdsPoliticalPosition> ?c  ?d <holdsPoliticalPosition> ?c  ?d <diedIn> ?b  4  1
+Rule584:  ?a <isCitizenOf> ?b  ?a <holdsPoliticalPosition> ?c  ?d <isLeaderOf> ?c  ?d <livesIn> ?b  4  1
+Rule585:  ?a <hasOfficialLanguage> ?b  ?a <hasCurrency> ?c  ?d <hasCurrency> ?c  ?d <hasOfficialLanguage> ?b  4  29
+Rule586:  ?a <influences> ?b  ?a <influences> ?c  ?c <created> ?d  ?b <created> ?d  4  40
+Rule587:  ?a <hasCapital> ?b  ?a <hasCurrency> ?c  ?d <hasCurrency> ?c  ?d <hasCapital> ?b  4  1
+Rule588:  ?a <hasWonPrize> ?b  ?a <actedIn> ?c  ?d <produced> ?c  ?d <hasWonPrize> ?b  4  9
+Rule589:  ?a <hasOfficialLanguage> ?b  ?a <exports> ?c  ?d <exports> ?c  ?d <hasOfficialLanguage> ?b  4  32
+Rule590:  ?a <exports> ?b  ?a <hasOfficialLanguage> ?c  ?d <hasOfficialLanguage> ?c  ?d <exports> ?b  4  66
+Rule591:  ?a <exports> ?b  ?c <isLeaderOf> ?a  ?c <isLeaderOf> ?d  ?d <imports> ?b  4  3
+Rule592:  ?a <participatedIn> ?b  ?c <isKnownFor> ?a  ?c <isLeaderOf> ?d  ?d <participatedIn> ?b  4  3
+Rule593:  ?a <created> ?b  ?a <actedIn> ?c  ?d <created> ?c  ?d <created> ?b  4  20
+Rule594:  ?a <hasChild> ?b  ?a <diedIn> ?c  ?d <wasBornIn> ?c  ?b <hasChild> ?d  4  12
+Rule595:  ?a <hasAcademicAdvisor> ?b  ?a <hasAcademicAdvisor> ?c  ?d <hasAcademicAdvisor> ?c  ?d <hasAcademicAdvisor> ?b  4  4
+Rule596:  ?a <isKnownFor> ?b  ?a <created> ?c  ?d <created> ?c  ?d <isKnownFor> ?b  4  2
+Rule597:  ?a <actedIn> ?b  ?a <actedIn> ?c  ?d <created> ?c  ?d <directed> ?b  4  5
+Rule598:  ?a <isMarriedTo> ?b  ?a <isCitizenOf> ?c  ?d <isLocatedIn> ?c  ?b <wasBornIn> ?d  4  1
+Rule599:  ?a <holdsPoliticalPosition> ?b  ?a <wasBornIn> ?c  ?d <wasBornIn> ?c  ?d <holdsPoliticalPosition> ?b  4  1
+Rule600:  ?a <graduatedFrom> ?b  ?a <diedIn> ?c  ?d <diedIn> ?c  ?d <graduatedFrom> ?b  4  2
+Rule601:  ?a <dealsWith> ?b  ?a <imports> ?c  ?d <imports> ?c  ?d <dealsWith> ?b  4  1002
+Rule602:  ?a <hasWonPrize> ?b  ?c <hasChild> ?a  ?c <isMarriedTo> ?d  ?d <hasWonPrize> ?b  4  9
+Rule603:  ?a <directed> ?b  ?c <influences> ?a  ?c <influences> ?d  ?d <actedIn> ?b  4  3
+Rule604:  ?a <influences> ?b  ?a <livesIn> ?c  ?d <livesIn> ?c  ?d <hasAcademicAdvisor> ?b  4  2
+Rule605:  ?a <livesIn> ?b  ?a <graduatedFrom> ?c  ?d <graduatedFrom> ?c  ?d <livesIn> ?b  4  6
+Rule606:  ?a <wasBornIn> ?b  ?a <diedIn> ?c  ?d <livesIn> ?c  ?d <livesIn> ?b  4  1
+Rule607:  ?a <created> ?b  ?a <hasMusicalRole> ?c  ?d <hasMusicalRole> ?c  ?d <created> ?b  4  1
+Rule608:  ?a <actedIn> ?b  ?a <created> ?c  ?d <created> ?c  ?d <directed> ?b  4  10
+Rule609:  ?a <participatedIn> ?b  ?a <isLocatedIn> ?c  ?d <isLocatedIn> ?c  ?d <participatedIn> ?b  4  10
+Rule610:  ?a <diedIn> ?b  ?a <wasBornIn> ?c  ?d <wasBornIn> ?c  ?d <diedIn> ?b  4  4
+Rule611:  ?a <influences> ?b  ?a <influences> ?c  ?c <directed> ?d  ?b <created> ?d  4  1
+Rule612:  ?a <directed> ?b  ?a <directed> ?c  ?d <created> ?c  ?d <actedIn> ?b  4  5
+Rule613:  ?a <hasAcademicAdvisor> ?b  ?a <hasAcademicAdvisor> ?c  ?c <worksAt> ?d  ?b <worksAt> ?d  4  9
+Rule614:  ?a <hasMusicalRole> ?b  ?a <hasWonPrize> ?c  ?d <hasWonPrize> ?c  ?d <hasMusicalRole> ?b  4  47
+Rule615:  ?a <isCitizenOf> ?b  ?a <diedIn> ?c  ?d <hasCapital> ?c  ?b <dealsWith> ?d  4  1
+Rule616:  ?a <hasOfficialLanguage> ?b  ?a <isLocatedIn> ?c  ?d <isLocatedIn> ?c  ?d <hasOfficialLanguage> ?b  4  2
+Rule617:  ?a <wasBornIn> ?b  ?a <influences> ?c  ?d <influences> ?c  ?d <diedIn> ?b  4  3
+Rule618:  ?a <holdsPoliticalPosition> ?b  ?a <wasBornIn> ?c  ?d <livesIn> ?c  ?d <holdsPoliticalPosition> ?b  4  1
+Rule619:  ?a <worksAt> ?b  ?c <influences> ?a  ?c <livesIn> ?d  ?b <isLocatedIn> ?d  4  1
+Rule620:  ?a <isLocatedIn> ?b  ?a <exports> ?c  ?d <exports> ?c  ?d <isLocatedIn> ?b  4  8
+Rule621:  ?a <hasAcademicAdvisor> ?b  ?a <livesIn> ?c  ?d <livesIn> ?c  ?d <influences> ?b  4  2
+Rule622:  ?a <worksAt> ?b  ?a <isCitizenOf> ?c  ?d <isCitizenOf> ?c  ?d <worksAt> ?b  4  2
+Rule623:  ?a <isLocatedIn> ?b  ?a <actedIn> ?c  ?d <actedIn> ?c  ?d <wasBornIn> ?b  4  2
+Rule624:  ?a <isLocatedIn> ?b  ?a <isCitizenOf> ?c  ?d <isCitizenOf> ?c  ?d <isLocatedIn> ?b  4  2
+Rule625:  ?a <actedIn> ?b  ?a <hasWonPrize> ?c  ?d <hasWonPrize> ?c  ?d <directed> ?b  4  4
+Rule626:  ?a <wasBornIn> ?b  ?a <graduatedFrom> ?c  ?d <graduatedFrom> ?c  ?d <isLeaderOf> ?b  4  1
+Rule627:  ?a <isCitizenOf> ?b  ?a <diedIn> ?c  ?d <wasBornIn> ?c  ?d <livesIn> ?b  4  2
+Rule628:  ?a <influences> ?b  ?a <isCitizenOf> ?c  ?d <isCitizenOf> ?c  ?b <influences> ?d  4  5
+Rule629:  ?a <hasWonPrize> ?b  ?a <isMarriedTo> ?c  ?d <isMarriedTo> ?c  ?d <hasWonPrize> ?b  4  29
+Rule630:  ?a <hasWonPrize> ?b  ?a <livesIn> ?c  ?d <livesIn> ?c  ?d <hasWonPrize> ?b  4  4
+Rule631:  ?a <isMarriedTo> ?b  ?a <actedIn> ?c  ?d <actedIn> ?c  ?b <hasChild> ?d  4  1
+Rule632:  ?a <produced> ?b  ?a <produced> ?c  ?d <directed> ?c  ?d <directed> ?b  4  2
+Rule633:  ?a <livesIn> ?b  ?a <livesIn> ?c  ?d <diedIn> ?c  ?d <isCitizenOf> ?b  4  6
+Rule634:  ?a <influences> ?b  ?a <diedIn> ?c  ?d <hasCapital> ?c  ?b <isCitizenOf> ?d  4  1
+Rule635:  ?a <isLeaderOf> ?b  ?c <hasChild> ?a  ?c <diedIn> ?d  ?d <isLocatedIn> ?b  4  3
+Rule636:  ?a <isLocatedIn> ?b  ?a <isCitizenOf> ?c  ?d <livesIn> ?c  ?d <livesIn> ?b  4  6
+Rule637:  ?a <livesIn> ?b  ?a <livesIn> ?c  ?d <livesIn> ?c  ?d <isCitizenOf> ?b  4  6
+Rule638:  ?a <diedIn> ?b  ?a <isCitizenOf> ?c  ?d <isCitizenOf> ?c  ?d <diedIn> ?b  4  3
+Rule639:  ?a <influences> ?b  ?a <influences> ?c  ?c <diedIn> ?d  ?b <wasBornIn> ?d  4  8
+Rule640:  ?a <exports> ?b  ?a <hasCapital> ?c  ?d <hasCapital> ?c  ?d <exports> ?b  4  1
+Rule641:  ?a <hasCurrency> ?b  ?a <hasOfficialLanguage> ?c  ?d <hasOfficialLanguage> ?c  ?d <hasCurrency> ?b  4  39
+Rule642:  ?a <influences> ?b  ?a <influences> ?c  ?c <produced> ?d  ?b <actedIn> ?d  4  9
+Rule643:  ?a <hasWonPrize> ?b  ?a <graduatedFrom> ?c  ?d <graduatedFrom> ?c  ?d <hasWonPrize> ?b  4  3
+Rule644:  ?a <hasWonPrize> ?b  ?a <diedIn> ?c  ?d <diedIn> ?c  ?d <hasWonPrize> ?b  4  5
+Rule645:  ?a <dealsWith> ?b  ?a <exports> ?c  ?d <imports> ?c  ?b <dealsWith> ?d  4  2003
+Rule646:  ?a <created> ?b  ?a <diedIn> ?c  ?d <diedIn> ?c  ?d <directed> ?b  4  1
+Rule647:  ?a <created> ?b  ?c <graduatedFrom> ?a  ?c <worksAt> ?d  ?d <created> ?b  4  6
+Rule648:  ?a <worksAt> ?b  ?a <isCitizenOf> ?c  ?d <isCitizenOf> ?c  ?d <graduatedFrom> ?b  4  3
+Rule649:  ?a <livesIn> ?b  ?c <created> ?a  ?c <created> ?d  ?d <livesIn> ?b  4  3
+Rule650:  ?a <participatedIn> ?b  ?a <exports> ?c  ?d <imports> ?c  ?d <participatedIn> ?b  4  777
+Rule651:  ?a <produced> ?b  ?a <created> ?c  ?d <produced> ?c  ?d <created> ?b  4  10
+Rule652:  ?a <exports> ?b  ?a <isLocatedIn> ?c  ?d <isLocatedIn> ?c  ?d <exports> ?b  4  4
+Rule653:  ?a <actedIn> ?b  ?a <hasChild> ?c  ?d <hasChild> ?c  ?d <actedIn> ?b  4  3
+Rule654:  ?a <worksAt> ?b  ?a <isKnownFor> ?c  ?c <influences> ?d  ?d <worksAt> ?b  4  3
+Rule655:  ?a <isCitizenOf> ?b  ?c <hasChild> ?a  ?c <diedIn> ?d  ?d <isLocatedIn> ?b  4  1
+Rule656:  ?a <exports> ?b  ?a <hasOfficialLanguage> ?c  ?d <hasOfficialLanguage> ?c  ?d <imports> ?b  4  42
+Rule657:  ?a <isCitizenOf> ?b  ?a <wasBornIn> ?c  ?d <wasBornIn> ?c  ?d <livesIn> ?b  4  6
+Rule658:  ?a <hasChild> ?b  ?a <hasWonPrize> ?c  ?d <hasWonPrize> ?c  ?d <hasChild> ?b  4  2
+Rule659:  ?a <imports> ?b  ?a <imports> ?c  ?d <imports> ?c  ?d <exports> ?b  4  136
+Rule660:  ?a <dealsWith> ?b  ?c <dealsWith> ?a  ?d <isLeaderOf> ?c  ?d <isLeaderOf> ?b  4  1
+Rule661:  ?a <actedIn> ?b  ?a <created> ?c  ?d <actedIn> ?c  ?d <actedIn> ?b  4  25
+Rule662:  ?a <dealsWith> ?b  ?c <isCitizenOf> ?a  ?d <hasAcademicAdvisor> ?c  ?d <isCitizenOf> ?b  4  3
+Rule663:  ?a <influences> ?b  ?a <isCitizenOf> ?c  ?d <isLocatedIn> ?c  ?b <diedIn> ?d  4  2
+Rule664:  ?a <graduatedFrom> ?b  ?a <worksAt> ?c  ?d <worksAt> ?c  ?d <graduatedFrom> ?b  4  4
+Rule665:  ?a <imports> ?b  ?a <hasCurrency> ?c  ?d <hasCurrency> ?c  ?d <imports> ?b  4  4
+Rule666:  ?a <isCitizenOf> ?b  ?a <graduatedFrom> ?c  ?d <worksAt> ?c  ?d <livesIn> ?b  4  1
+Rule667:  ?a <livesIn> ?b  ?a <livesIn> ?c  ?d <isCitizenOf> ?c  ?d <wasBornIn> ?b  4  4
+Rule668:  ?a <hasCapital> ?b  ?c <isLeaderOf> ?a  ?d <hasChild> ?c  ?d <diedIn> ?b  4  1
+Rule669:  ?a <participatedIn> ?b  ?a <participatedIn> ?c  ?d <participatedIn> ?c  ?b <isLocatedIn> ?d  4  2
+Rule670:  ?a <hasCapital> ?b  ?c <isCitizenOf> ?a  ?d <hasChild> ?c  ?d <wasBornIn> ?b  4  1
+Rule671:  ?a <hasAcademicAdvisor> ?b  ?a <hasAcademicAdvisor> ?c  ?c <isCitizenOf> ?d  ?b <isCitizenOf> ?d  4  1
+Rule672:  ?a <isMarriedTo> ?b  ?a <wasBornIn> ?c  ?d <wasBornIn> ?c  ?b <hasChild> ?d  4  11
+Rule673:  ?a <hasMusicalRole> ?b  ?a <hasMusicalRole> ?c  ?d <hasMusicalRole> ?c  ?d <hasMusicalRole> ?b  4  5
+Rule674:  ?a <influences> ?b  ?a <livesIn> ?c  ?d <isLocatedIn> ?c  ?b <worksAt> ?d  4  1
+Rule675:  ?a <livesIn> ?b  ?a <livesIn> ?c  ?d <isLocatedIn> ?c  ?d <isCitizenOf> ?b  4  3
+Rule676:  ?a <livesIn> ?b  ?a <graduatedFrom> ?c  ?d <graduatedFrom> ?c  ?d <isCitizenOf> ?b  4  5
+Rule677:  ?a <directed> ?b  ?a <directed> ?c  ?d <actedIn> ?c  ?d <produced> ?b  4  2
+Rule678:  ?a <livesIn> ?b  ?a <livesIn> ?c  ?d <wasBornIn> ?c  ?d <isLocatedIn> ?b  4  2
+Rule679:  ?a <isMarriedTo> ?b  ?a <hasChild> ?c  ?c <actedIn> ?d  ?b <directed> ?d  4  1
+Rule680:  ?a <livesIn> ?b  ?a <livesIn> ?c  ?d <isLocatedIn> ?c  ?d <wasBornIn> ?b  4  1
+Rule681:  ?a <hasCapital> ?b  ?c <isLocatedIn> ?a  ?d <wasBornIn> ?c  ?d <diedIn> ?b  4  2
